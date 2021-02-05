@@ -1,0 +1,106 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    background: url(/img/login.jpg) no-repeat;
+    background-size: cover;
+}
+
+.login{
+
+    display: none;
+    text-align: center;
+    position: absolute;
+    width: 500px;
+    height: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    box-shadow: 8px 8px 50px #000;    
+}
+
+.login header{
+    width: 200px;
+    padding: 5px 0px;
+    margin: auto;
+    font-size: 30px;
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+.login #username{
+    width: 180px;
+    margin: 40px 0px;
+    font-size: 20px;
+}
+#loginBtn{
+    border-radius: 12px;
+    font-size: 20px;
+    padding: 5px;
+    margin: 20px;
+    color: black;
+}
+
+
+.welcome{
+    display: none;
+    text-align: center;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    box-shadow: 8px 8px 50px #000;
+    
+}
+.welcome button{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    margin: 35px 200px;
+    border-radius: 12px;
+    color: black;
+}
+.how-to-play{
+
+    text-align: center;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    font-size: 20px;    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    box-shadow: 8px 8px 50px #000;
+}
+.how-to-play p{
+    margin: 40px 0px;
+    padding: 10px;
+}
+.how-to-play button{
+    border-radius: 12px;
+    font-size: 20px;
+    color: black;
+}
+.about{
+
+    text-align: center;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    font-size: 20px;    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    box-shadow: 8px 8px 50px #000;
+}
+.about button{
+    border-radius: 12px;
+    font-size: 20px;
+    color: black;
+}
