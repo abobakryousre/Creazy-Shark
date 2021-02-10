@@ -2,8 +2,12 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
-    background: url(../img/login.jpg) no-repeat;
-    background-size: cover;
+}
+
+#mainBackground{
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .login{
@@ -41,8 +45,11 @@ body{
 }
 
 #loginBtn:hover{
-    background: none;
-    border-color: silver;
+    background: rgba(239, 239, 239, .1 );
+    transform: scale(1.5);
+    border: none;
+    color: white;
+    transition: 0.3s;
 }
 
 .welcome{
@@ -68,9 +75,13 @@ body{
     color: black;
 }
 .welcome button:hover{
-    background: none;
-    border-color: silver;
+    background: rgba(239, 239, 239, .1 );
+    transform: scale(1.5);
+    border: none;
+    color: white;
+    transition: 0.3s;
 }
+
 
 .how-to-play{
     display: none;
@@ -96,8 +107,11 @@ body{
 }
 
 .how-to-play button:hover{
-    background: none;
-    border-color: silver;
+    background: rgba(239, 239, 239, .1 );
+    transform: scale(1.5);
+    border: none;
+    color: white;
+    transition: 0.3s;
 }
 
 .about{
@@ -121,8 +135,11 @@ body{
 }
 
 .about button:hover{
-    background: none;
-    border-color: silver;
+    background: rgba(239, 239, 239, .1 );
+    transform: scale(1.5);
+    border: none;
+    color: white;
+    transition: 0.3s;
 }
 
 .characters{
@@ -144,8 +161,11 @@ body{
 
 }
 .characters button:hover{
-    background: none;
-    border-color: silver;
+    background: rgba(239, 239, 239, .1 );
+    transform: scale(1.5);
+    border: none;
+    color: white;
+    transition: 0.3s;
 }
 .characters img{
     margin: 150px 30px 50px 50px;
@@ -190,6 +210,9 @@ body{
     color: black;
 }
 .levels button:hover{
-    background: none;
-    border-color: silver;
+    background: rgba(239, 239, 239, .1 );
+    transform: scale(1.5);
+    border: none;
+    color: white;
+    transition: 0.3s;
 }

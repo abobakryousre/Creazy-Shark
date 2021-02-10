@@ -41,6 +41,18 @@ backFromLevel.addEventListener("click", loadCharacterScene);
 
 
 
+function fade(element) {
+    var op = 1;  // initial opacity
+    var timer = setInterval(function () {
+        if (op <= 0.1){
+            clearInterval(timer);
+            element.style.display = 'none';
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op -= op * 0.1;
+    }, 50);
+}
 
 function checkUsername(event){
     buttonSound.play();
@@ -53,45 +65,58 @@ function checkUsername(event){
 }
 function loadWelcomeScene(){
     buttonSound.play();
-    loginScene.setAttribute("style", "display: none");
-    howToPlayScene.setAttribute("style", "display: none");
-    aboutScene.setAttribute("style", "display: none");
-    charactersScene.setAttribute("style", "display: none");
-    welcomeScene.setAttribute("style", "display: block");
+    fade(loginScene);
+    fade(howToPlayScene);
+    fade(aboutScene);
+    fade(charactersScene);
+    setTimeout(()=>{
+        welcomeScene.setAttribute("style", "display: block");
+    }, 500);
 }
 function loadLoginScene(){
     buttonSound.play();
-
-    welcomeScene.setAttribute("style", "display: none");
-    loginScene.setAttribute("style", "display: block");
+    fade(welcomeScene);
+    setTimeout(()=>{
+        loginScene.setAttribute("style", "display: block");
+    }, 500);
 }
 function choseCharacters(){
     buttonSound.play();
-
-    welcomeScene.setAttribute("Style", "display: none");
-    charactersScene.setAttribute("style", "display: block");
+    fade(welcomeScene);
+    setTimeout(()=>{
+        charactersScene.setAttribute("style", "display: block");
+    }, 500);    
 
 }
 function howToPlay(){
     buttonSound.play();
 
-    welcomeScene.setAttribute("style", "display: none");
-    howToPlayScene.setAttribute("style", "display: block");
-
+    fade(welcomeScene);
+    setTimeout(()=>{
+        howToPlayScene.setAttribute("style", "display: block");
+    }, 500); 
+    
 }
 function displayInforamtion(){
     buttonSound.play();
-    welcomeScene.setAttribute("style", "display: none");
-    aboutScene.setAttribute("style", "display: block");
+    fade(welcomeScene);
+    setTimeout(()=>{
+        aboutScene.setAttribute("style", "display: block");
+    }, 500); 
+    
 }
 function loadCharacterScene(){
     buttonSound.play();
+    fade(levelScene);
+    setTimeout(()=>{
+        charactersScene.setAttribute("style", "display: block");
+    }, 500); 
 
-    levelScene.setAttribute("style", "display: none");
-    charactersScene.setAttribute("style", "display: block");
 }
 function loadLevelScene(){
     buttonSound.play();
-    charactersScene.setAttribute("style", "display: none");
-    levelScene.setAttribute("style", "display: block");
+    fade(charactersScene);
+    setTimeout(()=>{
+        levelScene.setAttribute("style", "display: block");
+    }, 500); 
 }
