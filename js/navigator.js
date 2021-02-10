@@ -23,6 +23,32 @@ let characterThree = document.getElementById("characterThree");
 let buttonSound = document.createElement("audio");
 buttonSound.src = "./sound/bubble_01.ogg";
 
+let level = "";
+
+let easyLevel = document.getElementById("easy");
+let meduimLevel = document.getElementById("meduim");
+let hardLevel = document.getElementById("hard");
+
+easyLevel.addEventListener("click", ()=>{
+    level = "easy";
+    console.log(level + "  username is: " + username.value);
+    // start game here and use the username and level in your game
+});
+
+meduimLevel.addEventListener("click", ()=>{
+    level = "meduim";
+    console.log(level + "  username is: " + username.value);
+    // start game here and use the username and level in your game
+
+});
+
+hardLevel.addEventListener("click", ()=>{
+    level = "hard";
+    console.log(level + "  username is: " + username.value);
+    // start game here and use the username and level in your game
+
+})
+
 loginBtn.addEventListener("click", checkUsername);
 playBtn.addEventListener("click", choseCharacters);
 howToPlayBtn.addEventListener("click", howToPlay);
@@ -42,8 +68,8 @@ backFromLevel.addEventListener("click", loadCharacterScene);
 
 
 function fade(element) {
-    var op = 1;  // initial opacity
-    var timer = setInterval(function () {
+    let op = 1;  // initial opacity
+    let timer = setInterval(function () {
         if (op <= 0.1){
             clearInterval(timer);
             element.style.display = 'none';
