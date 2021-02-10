@@ -40,6 +40,10 @@ body{
     color: black;    
 }
 
+#loginBtn:hover{
+    background: none;
+    border-color: silver;
+}
 
 .welcome{
     display: none;
@@ -63,6 +67,11 @@ body{
     border-radius: 12px;
     color: black;
 }
+.welcome button:hover{
+    background: none;
+    border-color: silver;
+}
+
 .how-to-play{
     display: none;
     text-align: center;
@@ -85,6 +94,12 @@ body{
     font-size: 20px;
     color: black;
 }
+
+.how-to-play button:hover{
+    background: none;
+    border-color: silver;
+}
+
 .about{
     display: none;
     text-align: center;
@@ -103,8 +118,13 @@ body{
     font-size: 20px;
     color: black;
     padding: 5px;
-    /* margin: 20px; */
 }
+
+.about button:hover{
+    background: none;
+    border-color: silver;
+}
+
 .characters{
     display: none;
     text-align: center;
@@ -122,6 +142,10 @@ body{
     font-size: 20px;
     color: black;
 
+}
+.characters button:hover{
+    background: none;
+    border-color: silver;
 }
 .characters img{
     margin: 150px 30px 50px 50px;
@@ -164,4 +188,8 @@ body{
     border-radius: 12px;
     font-size: 20px;
     color: black;
+}
+.levels button:hover{
+    background: none;
+    border-color: silver;
 }

@@ -21,7 +21,7 @@ let characterTwo = document.getElementById("characterTwo");
 let characterThree = document.getElementById("characterThree");
 
 let buttonSound = document.createElement("audio");
-buttonSound.src = "../sound/bubble_01.ogg";
+buttonSound.src = "./sound/bubble_01.ogg";
 
 loginBtn.addEventListener("click", checkUsername);
 playBtn.addEventListener("click", choseCharacters);
