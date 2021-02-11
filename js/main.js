@@ -42,10 +42,26 @@ container.onmousemove = (event) => {
 };
 
 document.onkeydown = (event) =>  {
-
-    if (event.keyCode === 27)
-        if (!confirm("Continue Playing ?"))
+ 
+    if (event.keyCode === 27){
+        if (!confirm("exit Playing ?"))
             location.reload();
+        else{
+            displayGameOver();
+            GOSound.play();  // sound 
+            fishPlayer.style.display = "none";
+            board.style.display = "none";
+            clearInterval(interval);
+            clearInterval(t);
+            checkForFinalBadges();
+            updateLocalStorage();
+            updateCurrentPlayerBadges();
+            localStorage.removeItem(playerNa.value);  // use this mod for now ****#
+            exit();
+        }
+        
+        
+    }
 
     if (event.key === ' ' || event.key === 'Spacebar')
         event.preventDefault();
@@ -53,13 +69,13 @@ document.onkeydown = (event) =>  {
 };
 
 
-btnName.onclick = () => {
+// btnName.onclick = () => {
  
-    if (playerNa.value != "") {
+//     if (playerNa.value != "") {
         
-        nameEnt.classList.add("fadeOutUp");
-    }
-};
+//         nameEnt.classList.add("fadeOutUp");
+//     }
+// };
 
 let UpdateGameGrid =  () => {
 
@@ -154,12 +170,11 @@ let CheckEndOfGame = ()=> {
 };
 
 
-let setPlayerNumber = (num) => {
-    playerNumber = num;
-};
+
 
 let exit = function () {
     location.reload();
 };
 
 backgroundSound = setInterval(playUnderWaterSound, 6500);
+

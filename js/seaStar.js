@@ -2,7 +2,7 @@
 let seaStarMotion= () =>{
     seaStarTimer++;
     if (seaStarTimer===seaStarTimerMax){
-        seaStarTimerMax=Math.floor(Math.random() * 501)+500;
+        seaStarTimerMax=Math.floor(Math.random() * 501)+ (100 + 400* LEVEL_SPEED);
         seaStarTimer=0;
         seaStarPositionX=Math.floor(Math.random() * parseInt(window.innerWidth));
         seaStarMovingFlag=true;
@@ -20,7 +20,7 @@ let seaStarMotion= () =>{
           seaStarObj.style.top=0+'px';
           seaStarMovingFlag=false;
           seaStarPositionY=0;
-          seaStarTimerMax=Math.floor(Math.random() * 501)+500;
+          seaStarTimerMax=Math.floor(Math.random() * 501)+ (100 + 400* LEVEL_SPEED);
         }
 
     }
@@ -36,5 +36,5 @@ let seaStarMotion= () =>{
       seaStarObj.style.top=0+'px';
       seaStarMovingFlag=false;
       seaStarPositionY=0;
-      seaStarTimerMax=Math.floor(Math.random() * 501)+500;
+      seaStarTimerMax=Math.floor(Math.random() * 501)+ (100 + 400* LEVEL_SPEED);
   };

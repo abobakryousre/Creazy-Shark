@@ -36,7 +36,7 @@ button:hover {
     100% { transform: rotate(360deg); }
   }
 
-#EnterNameSec{
+/* #EnterNameSec{
 
   position: fixed;
     top: 0 ;
@@ -48,9 +48,9 @@ button:hover {
     width: 100% ;
     animation-delay: 1s ;
     animation-duration: 3s;
-}
+} */
 
-input.form-control , input.form-control:focus{
+/* input.form-control , input.form-control:focus{
   width: 30% ;
   margin: 5% ;
   margin-left: 35%;
@@ -65,10 +65,10 @@ input.form-control , input.form-control:focus{
 input.form-control::placeholder{
   color: #fff ;
   font-size: 20px  ;
-}
+} */
 
 
-#select{
+/* #select{
     position: fixed;
     top: 0 ;
     background: url("../Div/Welcome/bg.PNG") fixed round;
@@ -80,7 +80,7 @@ input.form-control::placeholder{
     width:100%;
     animation-delay: 0.5s ;
     animation-duration: 2s;
-}
+} */
 .transperant-btn{
     background: transparent ;
     border: 0px;
@@ -202,7 +202,7 @@ img.finalBadges{
 }
 
 #second{
- float: right;
+ 
  width: 28% ;
  height: 100%;
  display: inline-block ;
@@ -210,7 +210,7 @@ img.finalBadges{
 }
 
 #hour{
- float:left;
+ 
  width: 28% ;
  height: 100%;
  display: inline-block ;

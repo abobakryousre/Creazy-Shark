@@ -4,6 +4,7 @@ document.onreadystatechange =  () => {
     if (document.readyState === 'complete') {
 
         loaderOut();
+       
 
     }
 
@@ -11,7 +12,7 @@ document.onreadystatechange =  () => {
 
 let loaderOut = () => {
 
-    load.classList.add("fadeOutUp");
+     load.classList.add("fadeOutUp");
 
 };
 
@@ -56,7 +57,6 @@ let congUp = () => {
     fishPlayer.style.display = "block";
     board.style.display = "block";
     setTimeout( () => {
-
         congDiv.style.display = "none";
         congDiv.style.zIndex = 0;
     }, 1000)
@@ -65,8 +65,8 @@ let congUp = () => {
 
 let selectUp = () => {
 
-    select.classList.add("bounceOutUp");
-
+    levelScene.style.display = "none" ;
+    staticBG.style.display = "none" ;
 };
 
 let viewBadges = () => {
@@ -80,3 +80,5 @@ let hideBadges = () => {
     badgeDiv.classList.remove("bounceInLeft") ; 
     badgeDiv.style.display = "none" ; 
 };
+
+

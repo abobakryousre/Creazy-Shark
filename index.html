@@ -9,28 +9,32 @@
     <link rel="icon" tybe="image/x-icon" href="images/favicon.gif">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+   
+    <link rel="stylesheet" type="text/css" href="css/main.css" /> 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
     
+    
+
 </head>
 
 <body>
 
-        <div id="load" class="text-center animated">
-                <img src="Div/Welcome/logo.png" width="40%" >
-                <div id="loader"> </div>
-        </div>
+    <div id="load" class="text-center animated">
+            <img src="Div/Welcome/logo.png" width="40%" >
+            <div id="loader"> </div>
+    </div>
 
+        
 
     <video id="backgroundVideo" playsinline autoplay muted loop>
 
 
         <source id="backgroundWebm" src="videos/background.webm" type="video/webm">
-        <!-- <source src="videos/background.mp4" type="video/mp4"> -->
+        
 
     </video>
 
-    <section id="select" class="text-center animated ">
+    <!-- <section id="select" class="text-center animated ">
             <img src="Div/Welcome/logo.png" width="40%">
             <br>
             <button class="transperant-btn" onclick="selectUp(),setPlayerNumber(1),startGame()">
@@ -41,10 +45,67 @@
             </button>
 
 
-   </section>
+   </section> -->
+
+   <!--  -->
 
 
-   <section id  = "EnterNameSec" class="text-center animated  ">
+<!--  -->
+<section id="mainBackground"  >
+    <img src="Div/screens/login.jpg" >
+</section>
+
+<section  id="EnterNameSec"  >    
+    <header>Welcome</header>
+    <input type="text"  placeholder="Enter Your Name" id="nameEnter"><br>
+    <input type="submit" id="btnGame" value="Login" >
+</section>
+
+<section class="welcome">
+    <button id="play">Play</button>
+    <button id="how-to-play">How To play</button>
+    <button id="about">About Us</button>
+    <button id="exit">Exit</button>
+</section>
+<section class="how-to-play">
+    <p>
+        You have three life try to save them until you finish the game and you can use the mous to move any where and try to eat the fish that smaller than you,
+        and take care about sharek because if any one ate you, you will lose one life.
+    </p>
+    <p>
+        the game has three level each one is harder than the previous,
+        as long as you eat smaller fish your score increase and become able to eat anther type of fish until you reach the end of the current level.
+        then you will move to next level.
+    </p>
+    <button id="backFromHowToPlay">Back</button>
+</section>
+<section class="about">
+    <p>
+        will display information about us here
+    </p>
+    <button id="backFromAboutUs">Back</button>
+</section>
+<section class="characters" > 
+    <img src="Div/screens/fish1.jpg"  onclick="setPlayerNumber(1)">
+    <img src="Div/screens/fish2.webp"  onclick="setPlayerNumber(3)">
+    <img src="Div/screens/fish2.webp"  onclick="setPlayerNumber(4)">
+    <button id="backFromCharacters">Back</button>
+</section>
+
+<section id="levels" >
+    <div id="easy" onclick="selectUp(),startGame()" ><p>Easy</p></div>
+    <div id="meduim" onclick="selectUp(),startGame()" ><p>Meduim</p></div>
+    <div id="hard" onclick="selectUp(),startGame()" ><p>Hard</p></div>
+    <button id="backFromLevel">Back</button>
+</section>
+
+   <!--  -->
+   
+
+
+
+<!-- in out  -->
+   <!-- <section id  = "EnterNameSec" class="text-center animated  ">
         <img src="Div/Welcome/logo.png" width="40%">
         <br>
 
@@ -53,11 +114,11 @@
             <img class="start-img" src="images/Start/Start.png">
         </button>
 
-   </section>
-    <div id='board' class= "text-center">
+   </section> -->
+<!-- out -->
 
-
-
+   <!--  game  -->
+     <div id='board' class= "text-center">
 
         <div id='scoreDiv'>
             <img src='images/Header Content/Score.png' id='scoreImg'></img>
@@ -112,14 +173,14 @@
                         <img class='hourNum' src='images/Characters/numbers/0-blue.png'></img>
                 </div>
 
-             <!--   <div id='leftColon'>:</div> -->
+             
 
                 <div id='min'>
                         <img class='minNum' src='images/Characters/numbers/0-blue.png'></img>
                         <img class='minNum' src='images/Characters/numbers/0-blue.png'></img>
                 </div>
 
-              <!--  <div id='rightColon'>:</div> -->
+             
 
                 <div id='second'>
                         <img class='secondNum' src='images/Characters/numbers/0-blue.png'></img>
@@ -136,9 +197,9 @@
                 <img class='bad' src = "./images/Badges/HighScore.png"></img>
                 <img class='bad' src = "./images/Badges/Champion.png"></img>
             </div>
-          </div>
-
         </div>
+
+    </div>
 
     <div id ="gameOver" class="text-center gameOver animated">
             <img src='Div/GameOver/Gameover.png'>
@@ -149,19 +210,19 @@
             <button id='playAgain1' onclick="gameOverUp(),startGame()"><img width='100%' src='Div/Select/playagain.png' >
             </button>
                 <button id='badgeBtn' onclick="viewBadges()"><img width='100%' src='images/Header Content/Badge.png' >
-                </button>
-        </div>
+            </button>
+    </div>
 
-        <div id ="CongDiv" class="text-center gameOver animated">
-                <img src='images/Badges/congratulations.png'>
-                <br/>
-                <button id='exitBtn' onclick="exit()"><img width='100%' src='images/Header Content/exit.png' >
-                </button>
-                <button id='playAgain2' onclick="congUp(),startGame()"><img width='100%' src='Div/Select/playagain.png' >
-                </button>
-               <button id='badgeBtn' onclick="viewBadges()"><img width='100%' src='images/Header Content/Badge.png' >
-                </button>
-            </div>
+    <div id ="CongDiv" class="text-center gameOver animated">
+            <img src='images/Badges/congratulations.png'>
+            <br/>
+            <button id='exitBtn' onclick="exit()"><img width='100%' src='images/Header Content/exit.png' >
+            </button>
+            <button id='playAgain2' onclick="congUp(),startGame()"><img width='100%' src='Div/Select/playagain.png' >
+            </button>
+            <button id='badgeBtn' onclick="viewBadges()"><img width='100%' src='images/Header Content/Badge.png' >
+            </button>
+    </div>
 
 
     <div id="container">
@@ -192,9 +253,11 @@
     <audio id="underWater" type="audio/wav" src="sound/underWater.wav" preload="auto" controls="none" style="display: none;"></audio>
     <audio id="sizeUp" type="audio/wav" src="sound/size_up.wav" preload="auto" controls="none" style="display: none;"></audio>
     <audio id="gameOverSound" type="audio/wav" src="sound/GameOver.wav" preload="auto" controls="none" style="display: none;"></audio>
-    <audio id="congSound" type="audio/wav" src="sound/congratulation.wav" preload="auto" controls="none" style="display: none;"></audio>
-
+    <audio id="congSound" type="audio/wav" src="sound/congratulation.wav" preload="auto" controls="none" style="display: none;"></audio> 
+    <!-- game  -->
+    
     <script src="js/init.js"></script>
+    <script src="js/navigator.js"></script>
     <script src="js/EnemyFish.js"></script>
     <script src="js/specialFish.js"></script>
     <script src="js/Sound.js"></script>

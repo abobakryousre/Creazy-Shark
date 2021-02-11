@@ -1,5 +1,5 @@
 
-// export * from "./init.js" ;
+// export * as src from "./init.js" ;
 
 // DOM ELEMENTS
 let fishPlayer = document.getElementById("fishPlayer");         // player's fish image  
@@ -50,14 +50,11 @@ let containerBoundingRect = container.getBoundingClientRect();
 let specialFish;                                                // just declaring special fish variable 
 let badgrArr = document.getElementsByClassName('bad');
 
-let load = document.getElementById("load");
-let playerNa = document.getElementById("nameEnter");
 
-let btnName=document.getElementById("btnGame");
-let nameEnt=document.getElementById("EnterNameSec");
+
+
 let finalBadgesArr=document.getElementsByClassName("finalBadges");
 /////////////////////////////////////////////
-
 
 
 
@@ -70,9 +67,10 @@ let foodTimer = 0;
 const INIT_FISH_WIDTH = 100 ;                       // fish size   level= size * speed * num * 1/ time * 1/seastar * 1/special fish
 const INIT_FISH_HEIGHT = INIT_FISH_WIDTH - 40 ;
 
-const LEVEL_SPEED = 0 ;                                // enemy fish speed
-const NUM_FISH_ENEMIES = 9 ;                           // num of fish enemies
-const SEA_STAR_GIFT_NUM = 5 ;
+let LEVEL_SPEED = 0 ;                                // enemy fish speed 0 default
+const NUM_FISH_ENEMIES = 6 * (1+ LEVEL_SPEED * 3) ;                           // num of fish enemies 9 default
+const SEA_STAR_GIFT_NUM = 4 + LEVEL_SPEED ;
+let seaStarTimerMax = Math.floor(Math.random() * 501) + (100 + 400* LEVEL_SPEED);
 
 const LEVEL0_WEIGHT = 0.8  ;
 const LEVEL1_WEIGHT = 1.1  ;    
@@ -102,7 +100,7 @@ let randomMotionCompletionY = [];
 let verticalDirections = ["top", "down"];
 let seaStarTimer = 0;
 
-let seaStarTimerMax = Math.floor(Math.random() * 501) + 500;
+
 let seaStarPositionX;
 let seaStarPositionY = 0;
 let seaStarMovingFlag = false;

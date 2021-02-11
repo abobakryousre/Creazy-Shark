@@ -4,7 +4,7 @@ specialFish.createFish();
 
 let showSpecialFish = () => {
 
-    if (level === 2 && score === 35 && specialFlag === 1) {
+    if (level === 1 && score === 5 && specialFlag === 1) {
 
         specialFlag = 0;
         specialFish.speedX = 7;
