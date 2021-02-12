@@ -64,9 +64,10 @@ let congUp = () => {
 };
 
 let selectUp = () => {
-
-    levelScene.style.display = "none" ;
-    staticBG.style.display = "none" ;
+    fade(levelScene);
+    fade(staticBG);
+    // levelScene.style.display = "none" ;
+    // staticBG.style.display = "none" ;
 };
 
 let viewBadges = () => {

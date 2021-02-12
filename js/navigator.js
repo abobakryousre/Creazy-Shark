@@ -48,7 +48,7 @@ easyLevel.addEventListener("click", ()=>{
 meduimLevel.addEventListener("click", ()=>{
     // level = "meduim";
     console.log(level + "  playerNa is: " + playerNa.value);
-    LEVEL_SPEED = 1 ; 
+    LEVEL_SPEED = 2 ; 
     // start game here and use the playerNa and level in your game
 
 });
@@ -56,7 +56,7 @@ meduimLevel.addEventListener("click", ()=>{
 hardLevel.addEventListener("click", ()=>{
     // level = "hard";
     console.log(level + "  playerNa is: " + playerNa.value);
-    LEVEL_SPEED = 2 ; 
+    LEVEL_SPEED = 4 ; 
     // start game here and use the username and level in your game
 
 })
@@ -89,7 +89,7 @@ function fade(element) {
         element.style.opacity = op;
         element.style.filter = 'alpha(opacity=' + op * 100 + ")";
         op -= op * 0.1;
-    }, 50);
+    }, 25);
 }
 
 function checkUsername(event){

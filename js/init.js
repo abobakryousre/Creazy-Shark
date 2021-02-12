@@ -68,7 +68,7 @@ const INIT_FISH_WIDTH = 100 ;                       // fish size   level= size *
 const INIT_FISH_HEIGHT = INIT_FISH_WIDTH - 40 ;
 
 let LEVEL_SPEED = 0 ;                                // enemy fish speed 0 default
-const NUM_FISH_ENEMIES = 6 * (1+ LEVEL_SPEED * 3) ;                           // num of fish enemies 9 default
+const NUM_FISH_ENEMIES = 12 * level *  level *  level * (1+ LEVEL_SPEED * 100) ;                           // num of fish enemies 9 default
 const SEA_STAR_GIFT_NUM = 4 + LEVEL_SPEED ;
 let seaStarTimerMax = Math.floor(Math.random() * 501) + (100 + 400* LEVEL_SPEED);
 
@@ -109,6 +109,7 @@ let seaStarNum = 0;
 let gameover = false;
 
 let specialFlag = 1;
+let specialChFalg = true ;
 
 let interval;
 let specialFishInterval;

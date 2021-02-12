@@ -116,6 +116,8 @@ let startGame = () => {
     seaStarNum = 0;
     second = minutes = hours = 0;
     globalTimeInSeconds=0;
+    specialFlag = 1;
+    specialChFalg = true ;
     gameCompleteFlag=false;
     currentPlayerLevel1Time=null;
     currentPlayerLevel2Time=null;
@@ -125,7 +127,7 @@ let startGame = () => {
     currentPlayerTempBadge=[false,false,false];
     fishEnemiesList = [];
     fishPlayer.src = "./images/Characters/player" + playerNumber + "-right.gif";
-    backgroundWebm.src = "videos/background.webm";
+    // backgroundWebm.src = "videos/background.webm";
     backgroundVideo.load();
     removeBadgesFromDashBoard();
     showLevelUpNotificationImage();

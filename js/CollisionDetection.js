@@ -23,6 +23,7 @@ let detectCollisionBetweenPlayerFishAndEnemyFishesV2 = function () {
                                     container.removeChild(fishEnemiesList[i].element);
                                     playEatingSound();
                                     score++;
+                                    specialChFalg = true ; //new
                                     fishEnemiesList.splice(i, 1);
                                     removeFishRandomMotion(i);
                               }
@@ -51,6 +52,7 @@ let detectCollisionBetweenPlayerFishAndEnemyFishesV2 = function () {
                                     container.removeChild(fishEnemiesList[i].element);
                                     playEatingSound();
                                     score++;
+                                    specialChFalg = true ; //new
                                     fishEnemiesList.splice(i, 1);
                                     removeFishRandomMotion(i);
                               }
@@ -77,6 +79,7 @@ let detectCollisionBetweenPlayerFishAndEnemyFishesV2 = function () {
                                     container.removeChild(fishEnemiesList[i].element);
                                     playEatingSound();
                                     score++;
+                                    specialChFalg = true ; //new
                                     fishEnemiesList.splice(i, 1);
                                     removeFishRandomMotion(i);
                               }
@@ -98,6 +101,7 @@ let detectCollisionBetweenPlayerFishAndEnemyFishesV2 = function () {
                                     container.removeChild(fishEnemiesList[i].element);
                                     playEatingSound();
                                     score++;
+                                    specialChFalg = true ; //new
                                     fishEnemiesList.splice(i, 1);
                                     removeFishRandomMotion(i);
                               }
