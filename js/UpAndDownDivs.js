@@ -31,7 +31,7 @@ let gameOverUp = () => {
     gameOverDiv.classList.remove("bounceInDown");
     gameOverDiv.classList.add("bounceOutUp");
     fishPlayer.style.display = "block";
-    board.style.display = "block";
+    board.style.display = "flex";
     setTimeout(function () {
 
         gameOverDiv.style.display = "none";

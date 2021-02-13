@@ -15,6 +15,19 @@
 // import * as finalBadgesModule from "finalBadges.js";
 
 
+let gamePlay;
+let exitFlag = false;
+let escape = false;
+let pauseModal = document.getElementById('pauseModal');
+const keyboard = {
+    right: false,
+    left: false,
+    up: false,
+    esc: false,
+    any: false,
+};
+document.onkeydown = null ;  /// mod location.reload
+
 container.onmousemove = (event) => {
 
     containerBoundingRect = container.getBoundingClientRect();
@@ -41,32 +54,32 @@ container.onmousemove = (event) => {
 
 };
 
-document.onkeydown = (event) =>  {
+// document.onkeydown = (event) =>  {
  
-    if (event.keyCode === 27){
-        if (!confirm("exit Playing ?"))
-            location.reload();
-        else{
-            displayGameOver();
-            GOSound.play();  // sound 
-            fishPlayer.style.display = "none";
-            board.style.display = "none";
-            clearInterval(interval);
-            clearInterval(t);
-            checkForFinalBadges();
-            updateLocalStorage();
-            updateCurrentPlayerBadges();
-            localStorage.removeItem(playerNa.value);  // use this mod for now ****#
-            exit();
-        }
+//     if (event.keyCode === 27){
+//         if (!confirm("exit Playing ?"))
+//             location.reload();
+//         else{
+//             displayGameOver();
+//             GOSound.play();  // sound 
+//             fishPlayer.style.display = "none";
+//             board.style.display = "none";
+//             clearInterval(interval);
+//             clearInterval(t);
+//             checkForFinalBadges();
+//             updateLocalStorage();
+//             updateCurrentPlayerBadges();
+//             localStorage.removeItem(playerNa.value);  // use this mod for now ****#
+//             exit();
+//         }
         
         
-    }
+//     }
 
-    if (event.key === ' ' || event.key === 'Spacebar')
-        event.preventDefault();
+//     if (event.key === ' ' || event.key === 'Spacebar')
+//         event.preventDefault();
 
-};
+// };
 
 
 // btnName.onclick = () => {
@@ -80,7 +93,7 @@ document.onkeydown = (event) =>  {
 let UpdateGameGrid =  () => {
 
     CheckEndOfGame();
-    if(! gameCompleteFlag){
+    if( (! gameCompleteFlag) && (! escape)){
         CheckGameOver();
         adjustBoard(score, level, playerNumber, lives, seaStarNum);
         createEnemyFishes();
@@ -97,7 +110,85 @@ let UpdateGameGrid =  () => {
 };
 
 let startGame = () => {
+    ///
+    if ( document.onkeydown === null ){
+        document.onkeydown = (event) =>  {
 
+            if (event.keyCode === 27){
+                
+                escape = true;
+                if(pauseModal.style.display == "block"){
+                    pauseModal.style.display = "none";
+                    escape = false;
+                    container.onmousemove = (event) => {
+
+                        containerBoundingRect = container.getBoundingClientRect();
+                        
+                        if (parseInt(fishPlayer.style.left) < event.clientX - containerBoundingRect.left) {
+                            fishPlayer.src = "./images/Characters/player" + playerNumber + "-right.gif"; // change right
+                        } else if (parseInt(fishPlayer.style.left) > event.clientX - containerBoundingRect.left) {
+                            fishPlayer.src = "./images/Characters/player" + playerNumber + "-left.gif"; // change left
+                        }
+                    
+                        fishPlayer.style.left = (event.clientX - containerBoundingRect.left) + 'px';
+                        fishPlayer.style.top = (event.clientY - containerBoundingRect.top) + 'px';
+                    
+                    
+                        if (event.clientX >= window.innerWidth - fishPlayer.width) {
+                    
+                            fishPlayer.style.left = window.innerWidth - fishPlayer.width + 'px';
+                        }
+                    
+                        if (event.clientY >= window.innerHeight - fishPlayer.height) {
+                    
+                            fishPlayer.style.top = window.innerHeight - containerBoundingRect.top - fishPlayer.height + 'px';
+                        }
+                    
+                    };
+                }
+                else{
+                    pauseModal.style.display = "block";
+                    escape = true;
+                    container.onmousemove = null ;
+                }
+        
+                keyboard.esc = false;
+            }
+        
+            pauseModal.querySelector(".closeModal").addEventListener("click", function () {
+                pauseModal.style.display = "none";
+                escape = false;
+                container.onmousemove = (event) => {
+
+                    containerBoundingRect = container.getBoundingClientRect();
+                    
+                    if (parseInt(fishPlayer.style.left) < event.clientX - containerBoundingRect.left) {
+                        fishPlayer.src = "./images/Characters/player" + playerNumber + "-right.gif"; // change right
+                    } else if (parseInt(fishPlayer.style.left) > event.clientX - containerBoundingRect.left) {
+                        fishPlayer.src = "./images/Characters/player" + playerNumber + "-left.gif"; // change left
+                    }
+                
+                    fishPlayer.style.left = (event.clientX - containerBoundingRect.left) + 'px';
+                    fishPlayer.style.top = (event.clientY - containerBoundingRect.top) + 'px';
+                
+                
+                    if (event.clientX >= window.innerWidth - fishPlayer.width) {
+                
+                        fishPlayer.style.left = window.innerWidth - fishPlayer.width + 'px';
+                    }
+                
+                    if (event.clientY >= window.innerHeight - fishPlayer.height) {
+                
+                        fishPlayer.style.top = window.innerHeight - containerBoundingRect.top - fishPlayer.height + 'px';
+                    }
+                
+                };
+            });
+        
+            keyboard.esc = false;
+        };
+    }
+    // end menu
     if (localStorage.getObj(playerNa.value) === null)
         localStorage.setObj(playerNa.value, { scoreing: 0, level1time: 4000, level2time: 4000, level3time: 4000, numberOfLives: 0 });
 
@@ -178,5 +269,5 @@ let exit = function () {
     location.reload();
 };
 
-backgroundSound = setInterval(playUnderWaterSound, 6500);
+// backgroundSound = setInterval(playUnderWaterSound, 6500);
 

@@ -28,9 +28,9 @@
 
     <video id="backgroundVideo" playsinline autoplay muted loop>
 
-        <source id="backgroundWebm" src="videos/background.webm" type="video/webm">
-        <source id="backgroundWebm" src="videos/background.mp4" type="video/mp4">
         
+        <source id="backgroundWebm" src="videos/background.mp4" type="video/mp4">
+        <source id="backgroundWebm" src="videos/background.webm" type="video/webm">
        
         
 
@@ -71,28 +71,38 @@
 </section>
 <section class="how-to-play">
     <p>
-        You have three life try to save them until you finish the game and you can use the mous to move any where and try to eat the fish that smaller than you,
-        and take care about sharek because if any one ate you, you will lose one life.
+      the game has three level each one is harder than the previous, as long
+      as you eat smaller fish your score increase and become able to eat
+      anther type of fish until you reach the end of the current level. then
+      you will move to next level.
     </p>
     <p>
-        the game has three level each one is harder than the previous,
-        as long as you eat smaller fish your score increase and become able to eat anther type of fish until you reach the end of the current level.
-        then you will move to next level.
+      Try not to be eaten by a bigger fish.
+      Collect a lot of sea stars because your lives will increase one for each five sea stars.
+      Eat the speacial fish at level 2 to make all big fishes smaller than you.
+      Try to finish all levels as fast as possible to get our speed badges for every level.
     </p>
     <button id="backFromHowToPlay">Back</button>
-</section>
+  </section>
 <section class="about">
+    <p>Team Members</p>
     <p>
-        will display information about us here
+        <ul>
+            <li>Abdlerahman Montaser</li>
+            <li>Ahmed Mamdouh Abdel Wahab</li>
+            <li>Abobakr Yousre Salah</li>
+            <li>Hosam Mohamed Ali</li>
+        </ul>       
     </p>
     <button id="backFromAboutUs">Back</button>
 </section>
-<section class="characters" > 
-    <img src="Div/screens/fish1.jpg"  onclick="setPlayerNumber(1)">
-    <img src="Div/screens/fish2.webp"  onclick="setPlayerNumber(3)">
-    <img src="Div/screens/fish2.webp"  onclick="setPlayerNumber(4)">
+<section class="characters">
+    <p>Select Your Favorite Character</p>
+    <img src="images/Characters/player1-right.gif" id="characterOne" onclick="setPlayerNumber(1)"/>
+    <img src="images/Characters/player3-right.gif" id="characterTwo" onclick="setPlayerNumber(3)"/>
+    <img src="images/Characters/player4-right.gif" id="characterThree" onclick="setPlayerNumber(4)"/>
     <button id="backFromCharacters">Back</button>
-</section>
+  </section>
 
 <section id="levels" >
     <div id="easy" onclick="selectUp(),startGame()" ><p>Easy</p></div>
@@ -103,7 +113,77 @@
 
    <!--  -->
    
+<!-- Abdelraman  -->
 
+<section id="board">
+    <div id="scoreDiv">
+        <p>
+            score
+            <span id="scoreNum">0</span>
+        </p>
+    </div>
+    <div id="growthDiv">
+        <span>progress</span>
+        <div class="progressBar">
+            <div class="bar">
+                <div id="growthBarActual" style="height:24px;"></div>
+            </div>
+            <img class="menuChar" src="./images/Enemies/right/whiteFish.gif" alt="">
+            <img class="menuChar" src="./images/Enemies/right/whiteFish.gif" alt="">
+            <img class="menuChar" src="./images/Enemies/right/whiteFish.gif" alt="">
+        </div>
+    </div>
+    <div id='levelDiv'>
+        <p>
+            level
+            <span id='levelNum'>0</span>
+        </p>
+    </div>
+    <div id='liveDiv'>
+        <!-- <img style="width: 50px;
+        vertical-align: middle;
+        margin-right: 15px;" src="./images/Characters/player1-right.gif" alt=""> <span>0</span> -->
+        <img id='charImg' style="width: 50px; margin-right: 15px;">
+        <span id="liveNum">0</span>
+    </div>
+    <div id='menuDiv'>
+        <button>menu</button>
+    </div>
+    <div id='seaStarDiv'>
+        <img style="    width: 50px;
+        vertical-align: middle;
+        margin-right: 15px;" src='images/Bonus/seaStar.png' id='seaStarImg' /> <span id='seaStarNum'>0</span>
+    </div>
+
+    <div id="timer" class="time">
+        <span id="hours"></span>
+        <span>:</span>
+        <span id="minutes"></span>
+        <span>:</span>
+        <span id="second"></span>
+    </div>
+
+    <div id='badgeDiv'>
+        <!-- <button>BADGES</button> -->
+        <!-- <img src='images/Header Content/Badge.png' id='badgeImg'></img>
+        <div id='playerBadgesDiv'>
+            <img class='bad' src="./images/Badges/TimeBadge1.png"></img>
+            <img class='bad' src="./images/Badges/TimeBadge2.png"></img>
+            <img class='bad' src="./images/Badges/TimeBadge3.png"></img>
+            <img class='bad' src="./images/Badges/HighScore.png"></img>
+            <img class='bad' src="./images/Badges/Champion.png"></img>
+        </div> -->
+        <details>
+            <summary>BADGES</summary>
+            <img class='bad' src="./images/Badges/TimeBadge1.png"></img>
+            <img class='bad' src="./images/Badges/TimeBadge2.png"></img>
+            <img class='bad' src="./images/Badges/TimeBadge3.png"></img>
+            <img class='bad' src="./images/Badges/HighScore.png"></img>
+            <img class='bad' src="./images/Badges/Champion.png"></img>
+        </details>
+    </div>
+</section>
+<!-- End Abdelraman -->
 
 
 <!-- in out  -->
@@ -120,7 +200,7 @@
 <!-- out -->
 
    <!--  game  -->
-     <div id='board' class= "text-center">
+     <!-- <div id='board' class= "text-center">
 
         <div id='scoreDiv'>
             <img src='images/Header Content/Score.png' id='scoreImg'></img>
@@ -201,7 +281,7 @@
             </div>
         </div>
 
-    </div>
+    </div> -->
 
     <div id ="gameOver" class="text-center gameOver animated">
             <img src='Div/GameOver/Gameover.png'>
@@ -247,7 +327,15 @@
       </div>
     </div>
 
-
+     <!-- Pause menu -->
+     <div id="pauseModal" class="pauseModal" style="display: none;">
+        <div class="modal-content" >
+            <span class="closeModal">
+                <img src="images/x.png" alt="">
+            </span>
+            <button class="exit btn" onclick="exit()" >Quit to main menu</button>
+        </div>
+    </div>
 
     <audio id="eat" type="audio/wav" src="sound/eat.wav" preload="auto" controls="none" style="display: none;" ></audio>
     <audio id="die" type="audio/wav" src="sound/die.wav" preload="auto" controls="none" style="display: none;"></audio>

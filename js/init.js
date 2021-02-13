@@ -23,8 +23,8 @@ let scoreRecord = document.getElementById("score");
 let levelRecord = document.getElementById("level");
 let HScoreRecord = document.getElementById("HScore");
 
-let scoreNumArr = document.getElementsByClassName('scoreNum');              //4 images for score
-let liveNumArr = document.getElementsByClassName('liveNum');                //2 images for lives
+let scoreNumArr = document.getElementById('scoreNum');              //4 images for score
+let liveNumArr = document.getElementById('liveNum');                //2 images for lives
 
 let growthBarTotal = document.getElementById('growthBarTotal');             // growth bar total div
 let growthBarActual = document.getElementById('growthBarActual');           // growth bar actual div
@@ -40,9 +40,9 @@ let levelDiv = document.getElementById('levelDiv');
 let seaStarObj = document.getElementById('seaStar');
 let seaStarImgNum = document.getElementById('seaStarNum');
 let timeDiv = document.getElementById('timer');
-let secondNumArr = document.getElementsByClassName('secondNum');
-let minNumArr = document.getElementsByClassName('minNum');
-let hourNumArr = document.getElementsByClassName('hourNum');
+// let secondNumArr = document.getElementsByClassName('secondNum');
+// let minNumArr = document.getElementsByClassName('minNum');
+// let hourNumArr = document.getElementsByClassName('hourNum');
 let backgroundVideo = document.getElementById("backgroundVideo");
 let backgroundWebm = document.getElementById("backgroundWebm");
 let containerBoundingRect = container.getBoundingClientRect();
