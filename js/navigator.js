@@ -1,10 +1,23 @@
 
+let backgroundIndex = 0;
+let backgrounds = ["../img/loginPage/login3.jpeg",
+"../img/loginPage/login4.jpeg",
+ "../img/loginPage/login5.jpeg",
+"../img/loginPage/login6.jpeg",
+"../img/loginPage/login7.jpeg",
+"../img/loginPage/login8.jpeg",
+"../img/loginPage/login9.jpeg",
+"../img/loginPage/login11.jpeg",
+"../img/loginPage/login.jpg",
+]
+
 let loginScene = document.getElementsByClassName("login")[0];
 let welcomeScene = document.getElementsByClassName("welcome")[0];
 let howToPlayScene = document.getElementsByClassName("how-to-play")[0];
 let aboutScene = document.getElementsByClassName("about")[0];
 let charactersScene = document.getElementsByClassName("characters")[0];
 let levelScene = document.getElementsByClassName("levels")[0];
+let loginBackground = document.getElementById("loginBackground");
 
 let username = document.getElementById("username");
 let loginBtn = document.getElementById("loginBtn");
@@ -22,8 +35,8 @@ let characterThree = document.getElementById("characterThree");
 
 let buttonSound = document.createElement("audio");
 buttonSound.src = "./sound/bubble_01.ogg";
-
 let level = "";
+
 
 let easyLevel = document.getElementById("easy");
 let meduimLevel = document.getElementById("meduim");
@@ -66,6 +79,17 @@ backFromCharacters.addEventListener("click", loadWelcomeScene);
 backFromLevel.addEventListener("click", loadCharacterScene);
 
 
+function changeBackground(){
+    loginBackground.src = backgrounds[backgroundIndex];
+
+    if(backgroundIndex < backgrounds.length - 1){
+        backgroundIndex ++;
+    }else{
+        backgroundIndex = 0;
+    }
+}
+
+setInterval(changeBackground,4000);
 
 function fade(element) {
     let op = 1;  // initial opacity
