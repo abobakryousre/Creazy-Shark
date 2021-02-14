@@ -361,8 +361,10 @@ width:50px;
   z-index: 555 ; 
 }
 .about ul{
+  margin:50px 0px;
   list-style-type: none;
-  padding: 25px;
+  text-align: left;
+  padding: 50px;
 
 }
 .about button{
