@@ -1,8 +1,8 @@
 let adjustBoard = (score, level, charID, lives, seaStarNum) => {
   //Adjusting fish menu according to level
-  fishMenu[0].src='images/Enemies/right/'+fishImages["level"+level][0];
-  fishMenu[1].src='images/Enemies/right/'+fishImages["level"+level][1];
-  fishMenu[2].src='images/Enemies/right/'+fishImages["level"+level][2];
+  fishMenu[0].src = "images/Enemies/right/" + fishImages["level" + level][0];
+  fishMenu[1].src = "images/Enemies/right/" + fishImages["level" + level][1];
+  fishMenu[2].src = "images/Enemies/right/" + fishImages["level" + level][2];
 
   // Adjusting growth bar
   growthBarActual.style.width = ((score - (level - 1) * 30) / 30) * 100 + "%";
@@ -29,6 +29,8 @@ let adjustBoard = (score, level, charID, lives, seaStarNum) => {
   //   j--;
   //   lives = (lives - (lives % 10)) / 10;
   // }
+
+  difuclltySpan.textContent = DIFFCUITY;
 
   //Adjusting level
   // levelNum.src = 'images/Characters/numbers/' + level + '-blue.png';

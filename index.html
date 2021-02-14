@@ -29,7 +29,7 @@
     <video id="backgroundVideo" playsinline autoplay muted loop>
 
         
-        <source id="backgroundWebm" src="videos/background.mp4" type="video/mp4">
+        <!-- <source id="backgroundWebm" src="videos/background.mp4" type="video/mp4"> -->
         <source id="backgroundWebm" src="videos/background.webm" type="video/webm">
        
         
@@ -106,7 +106,7 @@
 
 <section id="levels" >
     <div id="easy" onclick="selectUp(),startGame()" ><p>Easy</p></div>
-    <div id="meduim" onclick="selectUp(),startGame()" ><p>Meduim</p></div>
+    <div id="meduim" onclick="selectUp(),startGame()" ><p>Medium</p></div>
     <div id="hard" onclick="selectUp(),startGame()" ><p>Hard</p></div>
     <button id="backFromLevel">Back</button>
 </section>
@@ -152,6 +152,8 @@
         <img style="    width: 50px;
         vertical-align: middle;
         margin-right: 15px;" src='images/Bonus/seaStar.png' id='seaStarImg' /> <span id='seaStarNum'>0</span>
+        <br>
+        <span>X = <span></span> </span>
     </div>
 
     <div id="timer" class="time">
@@ -348,8 +350,8 @@
     <audio id="congSound" type="audio/wav" src="sound/congratulation.wav" preload="auto" controls="none" style="display: none;"></audio> 
     <!-- game  -->
     
-    <script src="js/init.js"></script>
     <script src="js/navigator.js"></script>
+    <script src="js/init.js"></script>
     <script src="js/EnemyFish.js"></script>
     <script src="js/specialFish.js"></script>
     <script src="js/Sound.js"></script>
