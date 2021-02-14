@@ -10,8 +10,8 @@ class EnemyFish{
         this.direction = direction;
         this.directionVertical=directionVertical;
         this.weight = weight;
-        this.speedX = 2 * level + (weight) + (4 * LEVEL_SPEED);
-        this.speedY = 0.3*level + (0.9 * LEVEL_SPEED);
+        this.speedX = 2.5 * LEVEL_SPEED + (weight * LEVEL_SPEED )*level ;//+ (2 * LEVEL_SPEED);
+        this.speedY = this.speedX / 3 ; //0.3*level + (0.7 * LEVEL_SPEED * weight);
         this.element;
     }
 

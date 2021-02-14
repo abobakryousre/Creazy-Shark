@@ -37,26 +37,25 @@ buttonSound.src = "sound/bubble_01.ogg";
 let easyLevel = document.getElementById("easy");
 let meduimLevel = document.getElementById("meduim");
 let hardLevel = document.getElementById("hard");
+let LEVEL_SPEED = 1 ;  
+let DIFFCUITY = "easy" ;
 
 easyLevel.addEventListener("click", ()=>{
-    // level = "easy";
-    // console.log(level + "  playerNa is: " + playerNa.value);
-    LEVEL_SPEED = 0 ; 
-    // start game here and use the playerNa and level in your game
+    DIFFCUITY = "easy" ;
+    LEVEL_SPEED = 1 ; 
+    
 });
 
 meduimLevel.addEventListener("click", ()=>{
-    // level = "meduim";
-    // console.log(level + "  playerNa is: " + playerNa.value);
+    DIFFCUITY = "medium" ;
     LEVEL_SPEED = 2 ; 
     // start game here and use the playerNa and level in your game
 
 });
 
 hardLevel.addEventListener("click", ()=>{
-    // level = "hard";
-    // console.log(level + "  playerNa is: " + playerNa.value);
-    LEVEL_SPEED = 4 ; 
+    DIFFCUITY = "hard" ;
+    LEVEL_SPEED = 3 ; 
     // start game here and use the username and level in your game
 
 })

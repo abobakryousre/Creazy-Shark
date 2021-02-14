@@ -10,7 +10,7 @@ let showSpecialFish = () => {
         specialFlag = 0;           // detect event
         specialFish = new EnemyFish(-100, window.innerHeight / 2, "specialFish.gif", 0.4, "right", "");
         specialFish.createFish();
-        specialFish.speedX = 4;
+        specialFish.speedX = 10;
         specialFish.speedY = 0;
 
             specialFishInterval = setInterval( () => {
@@ -27,7 +27,7 @@ let showSpecialFish = () => {
                     specialFlag = 1;
                 }
                 
-            }, 100);
+            }, 20);
            
         
 
@@ -55,10 +55,7 @@ let detectCollisionBetweenPlayerAndSpecialFish = () => {
 
         clearInterval(specialFishInterval);
         specialFlag = 1;
-        // specialFish = new EnemyFish(-100, window.innerHeight / 2, "specialFish.gif", 0.4, "right", "");
-        // specialFish.speedX = 4;
-        // specialFish.speedY = 0;
-        // specialFish.createFish();
+       
         return;
 
     }

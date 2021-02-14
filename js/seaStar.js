@@ -1,5 +1,7 @@
 
 let seaStarMotion= () =>{
+    
+    let seaStarTimerMax = Math.floor(Math.random() * 501) + (100 + 400* LEVEL_SPEED);
     seaStarTimer++;
     if (seaStarTimer===seaStarTimerMax){
         seaStarTimerMax=Math.floor(Math.random() * 501)+ (100 + 400* LEVEL_SPEED);
