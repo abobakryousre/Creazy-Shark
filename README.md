@@ -7,11 +7,11 @@
     this is a feeding Fish Game
 
 ## Table of content
-    * [Play](#play)
-    * [Usage](#usage)
-    * [How to play](#how-to-play)
-    * [Used Tecnology](#used-tecnology) 
-    * [Team members](#team-members)
+* [Play](#play)
+* [Usage](#usage)
+* [How to play](#how-to-play)
+* [Used Tecnology](#used-tecnology) 
+* [Team members](#team-members)
 
 # Play
     
