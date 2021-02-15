@@ -28,6 +28,7 @@ let backFromLevel = document.getElementById("backFromLevel");
 // let characterOne = document.getElementById("characterOne");
 // let characterTwo = document.getElementById("characterTwo");
 // let characterThree = document.getElementById("characterThree");
+let difuclltySpan = document.getElementById("difaculty");
 
 let buttonSound = document.createElement("audio");
 buttonSound.src = "sound/bubble_01.ogg";

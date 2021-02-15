@@ -137,4 +137,5 @@ let globalTimeInSeconds=0;
 let currentPlayerTempBadge=[false,false,false];
 
 
-
+let BoardMenuBtn = document.getElementById("Board-menuBtn") ; 
+let seaStarSpan = document.getElementById("seaStarValue");

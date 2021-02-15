@@ -20,6 +20,9 @@ let adjustBoard = (score, level, charID, lives, seaStarNum) => {
   //Adjusting lifes
   liveNumArr.textContent = lives;
 
+  difuclltySpan.textContent = DIFFCUITY ;
+  seaStarSpan.textContent = SEA_STAR_GIFT_NUM ;
+  
   charImg.src = "images/Characters/player" + charID + "-right.gif";
   // let j = liveNumArr.length - 1;
 
