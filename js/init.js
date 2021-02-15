@@ -139,3 +139,8 @@ let currentPlayerTempBadge=[false,false,false];
 
 let BoardMenuBtn = document.getElementById("Board-menuBtn") ; 
 let seaStarSpan = document.getElementById("seaStarValue");
+
+
+let mutedSvg = document.getElementById("muted");
+let unMutedSvg = document.getElementById("unmuted");
+unMutedSvg.style.display = 'none' ;

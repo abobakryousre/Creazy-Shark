@@ -726,9 +726,9 @@ margin-right: 6.666%;
   text-align: center;
 }
 
-#seaStarDiv>span{
+/* #seaStarDiv>span{
   color:rebeccapurple;
-}
+} */
 #badgeDiv {
   width: 12.5%;
 }
@@ -857,7 +857,7 @@ margin-right: 6.666%;
   background-color: transparent;
   margin: 10% auto;
   padding: 20px;
-  border: 2px solid white ;
+  border: 2px solid #0554af;
   border-radius: 40px;
   position: absolute;
   width: 25%;
@@ -886,8 +886,8 @@ margin-right: 6.666%;
   min-width: 100px;
   height: 50px;
   border-radius: 30px;
-  border: 2px solid white;
-  color: springgreen;
+  border: 2px solid #053c6e;
+  color: #053c6e;
   /* outline: none; */
   font-size: x-large;
 }
@@ -900,4 +900,18 @@ margin-right: 6.666%;
 
 .btn.exit {
   margin-top: 15px;
+}
+
+
+#muted{
+  margin-right: 0%;
+}
+
+#unmuted{
+  margin-right: 0%;
+}
+
+#resumeAll{
+  margin-left: 0%;
+  margin-right: 25%;
 }

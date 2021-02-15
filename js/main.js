@@ -111,7 +111,7 @@ let UpdateGameGrid =  () => {
 
 
 
-pauseModal.querySelector(".closeModal").addEventListener("click", function () {         //**/ */
+pauseModal.querySelector("#resumeAll").addEventListener("click", function () {         //**/ */
     pauseModal.style.display = "none";
     board.style.display = "flex";
     escapeFlag = false;
@@ -243,7 +243,7 @@ let exit = function () {
     location.reload();
 };
 
-// backgroundSound = setInterval(playUnderWaterSound, 6500);
+
 
 let BoardMenuBtnAction = function(){
     escapeFlag = false;
@@ -289,7 +289,7 @@ let BoardMenuBtnAction = function(){
 
 
 let pauseAction = function(){
-    pauseModal.querySelector(".closeModal").addEventListener("click", function () {
+    pauseModal.querySelector("#resumeAll").addEventListener("click", function () {
         pauseModal.style.display = "none";
         board.style.display = "flex";
         // console.log("flex2") ;
@@ -321,3 +321,9 @@ let pauseAction = function(){
         };
     });
 }
+
+
+
+
+
+// backgroundSound = setInterval(playUnderWaterSound, 6500);
