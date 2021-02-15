@@ -201,14 +201,7 @@ width:50px;
   margin-right:46%;
 }
 
-#badgeDiv {
-   position:absolute;
-   width:29%;
-   height:100%;
-   right:0%;
-   top:2%;
 
-}
 #badgeImg{
   height:100%;
   width:20%;
@@ -238,32 +231,33 @@ width:50px;
   z-index: 555 ;
 }
 
-#EnterNameSec{
-
+#EnterNameSec {
   text-align: center;
   position: absolute;
-  width: 500px;
-  height: 250px;
+  width: 30%;
+  height: 40%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  box-shadow: 8px 8px 50px #000;  
-  z-index: 555 ; 
+  box-shadow: 8px 8px 50px #000;
+  z-index: 555;
 }
 
-#EnterNameSec header{
-  width: 200px;
+#EnterNameSec header {
+  width: 80%;
   padding: 5px 0px;
   margin: auto;
   font-size: 30px;
   border-bottom: 3px solid rgb(0, 0, 0);
 }
 
-#EnterNameSec #nameEnter{
-  width: 180px;
-  margin: 40px 0px;
+#EnterNameSec #nameEnter {
+  width: 60%;
+  height: 13%;
+  margin: 10%;
   font-size: 20px;
+  /* place-content: center; */
 }
 #btnGame{
   border-radius: 500px;
@@ -316,9 +310,10 @@ width:50px;
   display: none;
   text-align: center;
   position: absolute;
-  width: 500px;
-  height: 500px;
-  font-size: 20px;    
+  width: 600px;
+  height: 600px;
+  font-size: 20px;
+  font-weight: bold;    
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -327,7 +322,7 @@ width:50px;
   z-index: 555 ; 
 }
 .how-to-play p{
-  margin: 20px 0px;
+  margin: 40px 0px;
   padding: 10px;
 }
 .how-to-play button{
@@ -344,13 +339,21 @@ width:50px;
   transition: 0.3s;
 }
 
+#how-to-play-header{
+  margin-top: 7%;
+  color: rebeccapurple;
+  box-shadow: inherit;
+  font-size: xx-large;
+  font-family: emoji;
+}
 .about{
   display: none;
   text-align: center;
   position: absolute;
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   font-size: 20px;    
+  font-weight: bold;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -358,6 +361,53 @@ width:50px;
   box-shadow: 8px 8px 50px #000;
   z-index: 555 ; 
 }
+.about ul{
+  margin:50px 0px;
+  list-style-type: none;
+  text-align: left;
+  padding: 50px;
+
+}
+#about-header{
+  margin-top: 7%;
+  color: rebeccapurple;
+  box-shadow: inherit;
+  font-size: larger;
+  font-family: emoji;
+  font-size: xx-large;
+}
+
+#characters-header{
+  margin-top: 7%;
+  width: 100%;
+  color: rebeccapurple;
+  box-shadow: inherit;
+  font-size: xx-large;
+  font-family: emoji;
+  margin-left: 0%;
+}
+
+#member-header{
+  margin-top: 3%;
+  font-family: inherit;
+  box-shadow: inherit;
+  color: rebeccapurple;
+}
+#levels-header{
+  margin-top: 5%;
+  font-family: inherit;
+  box-shadow: inherit;
+  color: rebeccapurple;
+  font-family: emoji;
+  font-size: x-large;
+}
+
+.member-developer{
+  color: white;
+  padding-left: 5%;
+  font-family: monospace;
+}
+
 .about button{
   border-radius: 12px;
   font-size: 20px;
@@ -425,16 +475,14 @@ width:50px;
   text-align: center;
   position: absolute;
   width: 500px;
-  height: 600px;
-  
+  height: 650px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   box-shadow: 8px 8px 50px #000;
-  z-index: 555 ;
-   
-  animation-delay: 0.5s ;
+  z-index: 555;
+  animation-delay: 0.5s;
   animation-duration: 2s;
 
 }
@@ -666,12 +714,30 @@ margin-right: 6.666%;
   float: right;
 } */
 
-.bad{
- height:100%;
- width:19%;
- margin-left: 1%;
- float:right;
- border: solid 0.5px SandyBrown;
+/* #badgeDiv {
+  position:absolute;
+  width:3%;
+  height:100%;
+  right:0%;
+  top:2%;
+
+} */
+#seaStarDiv{
+  text-align: center;
+}
+
+/* #seaStarDiv>span{
+  color:rebeccapurple;
+} */
+#badgeDiv {
+  width: 12.5%;
+}
+
+.bad {
+  height: 20%;
+  width: 100%;
+  float: right;
+  border: solid 0.5px SandyBrown;
 }
 
 #board {
@@ -680,9 +746,21 @@ margin-right: 6.666%;
   position: fixed;
   top: 0;
   left: 0;
-  align-items: center;
+  align-items: baseline;
   justify-content: flex-start;
   padding: 0 0px;
+  color: #fff;
+  font-size: 16px;
+}
+
+#board > div > p {
+  font-weight: bolder;
+  color: #fff;
+}
+
+#timer > span {
+  font-weight: bolder;
+  color: #fff;
 }
 
 #board > div {
@@ -692,6 +770,11 @@ margin-right: 6.666%;
 #growthDiv {
   display: flex;
   align-items: center;
+}
+
+#growthDiv span{
+  padding-right: 15px;
+  font-weight: bolder;
 }
 
 #growthDiv .bar {
@@ -750,6 +833,7 @@ margin-right: 6.666%;
   width: 50px;
 }
 
+
 /**** end board ***/ 
 
 
@@ -770,11 +854,10 @@ margin-right: 6.666%;
 
 
 .pauseModal .modal-content {
-  background-image: url(../images/BG.png);
-  background-color: #fefefe;
+  background-color: transparent;
   margin: 10% auto;
   padding: 20px;
-  border: 1px solid #888;
+  border: 2px solid #0554af;
   border-radius: 40px;
   position: absolute;
   width: 25%;
@@ -803,10 +886,10 @@ margin-right: 6.666%;
   min-width: 100px;
   height: 50px;
   border-radius: 30px;
-  border: 1px solid #ccc;
-  color: #315bff;
-  outline: none;
-  font-size: 20px;
+  border: 2px solid #053c6e;
+  color: #053c6e;
+  /* outline: none; */
+  font-size: x-large;
 }
 
 .btn:hover,
@@ -817,4 +900,18 @@ margin-right: 6.666%;
 
 .btn.exit {
   margin-top: 15px;
+}
+
+
+#muted{
+  margin-right: 0%;
+}
+
+#unmuted{
+  margin-right: 0%;
+}
+
+#resumeAll{
+  margin-left: 0%;
+  margin-right: 25%;
 }
