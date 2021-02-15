@@ -118,8 +118,8 @@ let detectCollisionBetweenPlayerFishAndEnemyFishesV2 = function () {
 let boom = function () {
 
       bom.src = "./images/Box_And_Boom/BOOOM.gif";
-      bom.height = INIT_FISH_WIDTH * 3 ;
-      bom.width = INIT_FISH_WIDTH * 3 ;
+      bom.height = INIT_FISH_WIDTH * 1 ;
+      bom.width = INIT_FISH_WIDTH * 1 ;
       bom.style.position = "absolute";
       bom.style.left = parseInt(fishPlayer.style.left) - containerBoundingRect.left + "px";
       bom.style.top = parseInt(fishPlayer.style.top) - containerBoundingRect.top + "px";
@@ -177,9 +177,7 @@ let detectCollisionBetweenEnemyFishes = function () {
                                           && fishEnemiesList[j].x > 0
                                           && fishEnemiesList[j].x <= window.innerWidth) {
 
-                                          // console.log("collision happend between fish at x : " + fishEnemiesList[i].x
-                                          //     + " and y: " + fishEnemiesList[i].y + " and fish at x : " + fishEnemiesList[j].x
-                                          //     + " and y: " + fishEnemiesList[j].y + " and array length : " + fishEnemiesList.length);
+                                          
 
                                           if (fishEnemiesList[i].weight > fishEnemiesList[j].weight) {
                                                 container.removeChild(fishEnemiesList[j].element);

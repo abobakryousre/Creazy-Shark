@@ -39,7 +39,7 @@ let muteAll = () =>{
     dyingSound.muted = true ;
     levelUpSound.muted = true ;
     sizeUpSound.muted = true ;
-    console.log("mute")
+    
 }
 
 let unMuteAll = ()=>{
@@ -50,5 +50,5 @@ let unMuteAll = ()=>{
     dyingSound.muted = false ;
     levelUpSound.muted = false ;
     sizeUpSound.muted = false ;
-    console.log("unmute")
+   
 }

@@ -1,6 +1,4 @@
 
-// specialFish = new EnemyFish(-100, window.innerHeight / 2, "specialFish.gif", 0.4, "right", "");
-// specialFish.createFish();
 
 let showSpecialFish = () => {
 

@@ -1,20 +1,4 @@
 
-// import * as initModule from "./init.js" ;
-// import * as EnemyFishModule from "EnemyFish.js" ;
-// import * as specialFishModule from "specialFish.js" ;
-// import * as SoundModule from "Sound.js" ;
-// import * as boardModule from"board.js" ;
-// import * as EnemyFishesCreationAndMovementModule from"EnemyFishesCreationAndMovement.js" ;
-// import * as scoreAndLevelModule from "scoreAndLevel.js" ;
-// import * as CollisionDetectionModule from "CollisionDetection.js" ;
-// import * as UpAndDownDivsModule from "UpAndDownDivs.js" ;
-// import * as timerModule from "timer.js" ;
-// import * as randomMotionModule from "randomMotion.js" ;
-// import * as seaStarModule from "seaStar.js" ;
-// import * as localStorageFunctionsModule from "localStorageFunctions.js" ;
-// import * as finalBadgesModule from "finalBadges.js";
-
-
 let gamePlay;
 let exitFlag = false;
 let escapeFlag = false;
@@ -218,7 +202,6 @@ let BoardMenuBtnAction = function(){
         pauseModal.style.display = "none";
         board.style.display = "flex";
         fishPlayer.style.display = "block" ;
-        // console.log("flex") ;
         escapeFlag = false;
         container.onmousemove = (event) => {
 
@@ -261,7 +244,6 @@ let pauseAction = function(){
         pauseModal.style.display = "none";
         board.style.display = "flex";
         fishPlayer.style.display = "block" ;
-        // console.log("flex2") ;
         escapeFlag = false;
         container.onmousemove = (event) => {
 
