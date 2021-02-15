@@ -1,21 +1,17 @@
-
-
-
-// let loginScene = document.getElementsByClassName("login")[0];
-// let username = document.getElementById("username");
-// let loginBtn = document.getElementById("loginBtn");
+// DOM 
 let nameEnt=document.getElementById("EnterNameSec");
 let load = document.getElementById("load");
 let playerNa = document.getElementById("nameEnter");
 let btnName=document.getElementById("btnGame");
 /**** */
+
 let staticBG = document.getElementById("mainBackground") ;
 let welcomeScene = document.getElementsByClassName("welcome")[0];
 let howToPlayScene = document.getElementsByClassName("how-to-play")[0];
 let aboutScene = document.getElementsByClassName("about")[0];
 let charactersScene = document.getElementsByClassName("characters")[0];
 let levelScene = document.getElementById("levels");
-
+///*** */
 
 let playBtn = document.getElementById("play");
 let howToPlayBtn = document.getElementById("how-to-play");
@@ -25,21 +21,21 @@ let backFromHowToPlayBtn = document.getElementById("backFromHowToPlay");
 let backFromAboutUsBtn = document.getElementById("backFromAboutUs");
 let backFromCharacters = document.getElementById("backFromCharacters");
 let backFromLevel = document.getElementById("backFromLevel");
-// let characterOne = document.getElementById("characterOne");
-// let characterTwo = document.getElementById("characterTwo");
-// let characterThree = document.getElementById("characterThree");
+/*** */
 let difuclltySpan = document.getElementById("difaculty");
 
 let buttonSound = document.createElement("audio");
 buttonSound.src = "sound/bubble_01.ogg";
 
-
+// vars 
 
 let easyLevel = document.getElementById("easy");
 let meduimLevel = document.getElementById("meduim");
 let hardLevel = document.getElementById("hard");
 let LEVEL_SPEED = 1 ;  
 let DIFFCUITY = "easy" ;
+
+// functions
 
 easyLevel.addEventListener("click", ()=>{
     DIFFCUITY = "easy" ;
@@ -50,14 +46,12 @@ easyLevel.addEventListener("click", ()=>{
 meduimLevel.addEventListener("click", ()=>{
     DIFFCUITY = "medium" ;
     LEVEL_SPEED = 2 ; 
-    // start game here and use the playerNa and level in your game
-
+ 
 });
 
 hardLevel.addEventListener("click", ()=>{
     DIFFCUITY = "hard" ;
     LEVEL_SPEED = 3 ; 
-    // start game here and use the username and level in your game
 
 })
 
@@ -67,16 +61,11 @@ howToPlayBtn.addEventListener("click", howToPlay);
 aboutBtn.addEventListener("click", displayInforamtion);
 exitBtn.addEventListener("click", loadLoginScene);
 
-// characterOne.addEventListener("click", loadLevelScene);
-// characterTwo.addEventListener("click", loadLevelScene);
-// characterThree.addEventListener("click", loadLevelScene);
-
 
 backFromHowToPlayBtn.addEventListener("click", loadWelcomeScene);
 backFromAboutUsBtn.addEventListener("click", loadWelcomeScene);
 backFromCharacters.addEventListener("click", loadWelcomeScene);
 backFromLevel.addEventListener("click", loadCharacterScene);
-
 
 
 function fade(element) {
@@ -98,10 +87,10 @@ function checkUsername(event){
         nameEnt.classList.add("fadeOutUp");
         loadWelcomeScene();
     }else{
-        // alert("invaled username");
         event.preventDefault();
     }
 }
+
 function loadWelcomeScene(){
     buttonSound.play();
     fade(nameEnt);
@@ -112,6 +101,7 @@ function loadWelcomeScene(){
         welcomeScene.setAttribute("style", "display: block");
     }, 500);
 }
+
 function loadLoginScene(){
     buttonSound.play();
     fade(welcomeScene);
@@ -119,6 +109,7 @@ function loadLoginScene(){
         nameEnt.setAttribute("style", "display: block");
     }, 500);
 }
+
 function choseCharacters(){
     buttonSound.play();
     fade(welcomeScene);
@@ -127,6 +118,7 @@ function choseCharacters(){
     }, 500);    
 
 }
+
 function howToPlay(){
     buttonSound.play();
 
@@ -136,6 +128,7 @@ function howToPlay(){
     }, 500); 
     
 }
+
 function displayInforamtion(){
     buttonSound.play();
     fade(welcomeScene);
@@ -144,6 +137,7 @@ function displayInforamtion(){
     }, 500); 
     
 }
+
 function loadCharacterScene(){
     buttonSound.play();
     fade(levelScene);
@@ -152,6 +146,7 @@ function loadCharacterScene(){
     }, 500); 
 
 }
+
 function loadLevelScene(){
     buttonSound.play();
     fade(charactersScene);

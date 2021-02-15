@@ -54,41 +54,6 @@ container.onmousemove = (event) => {
 
 };
 
-// document.onkeydown = (event) =>  {
- 
-//     if (event.keyCode === 27){
-//         if (!confirm("exit Playing ?"))
-//             location.reload();
-//         else{
-//             displayGameOver();
-//             GOSound.play();  // sound 
-//             fishPlayer.style.display = "none";
-//             board.style.display = "none";
-//             clearInterval(interval);
-//             clearInterval(t);
-//             checkForFinalBadges();
-//             updateLocalStorage();
-//             updateCurrentPlayerBadges();
-//             localStorage.removeItem(playerNa.value);  // use this mod for now ****#
-//             exit();
-//         }
-        
-        
-//     }
-
-//     if (event.key === ' ' || event.key === 'Spacebar')
-//         event.preventDefault();
-
-// };
-
-
-// btnName.onclick = () => {
- 
-//     if (playerNa.value != "") {
-        
-//         nameEnt.classList.add("fadeOutUp");
-//     }
-// };
 
 let UpdateGameGrid =  () => {
 
@@ -114,6 +79,7 @@ let UpdateGameGrid =  () => {
 pauseModal.querySelector("#resumeAll").addEventListener("click", function () {         //**/ */
     pauseModal.style.display = "none";
     board.style.display = "flex";
+    fishPlayer.style.display = "block" ;
     escapeFlag = false;
     container.onmousemove = (event) => {
 
@@ -145,6 +111,7 @@ pauseModal.querySelector("#resumeAll").addEventListener("click", function () {  
 let startGame = () => {
     ///
     board.style.display = "none" ;
+    fishPlayer.style.display = "none" ; 
     pauseModal.style.display = "block";     //** */
 
     escapeFlag = true;                      /** */
@@ -250,6 +217,7 @@ let BoardMenuBtnAction = function(){
     if(pauseModal.style.display == "block"){
         pauseModal.style.display = "none";
         board.style.display = "flex";
+        fishPlayer.style.display = "block" ;
         // console.log("flex") ;
         escapeFlag = false;
         container.onmousemove = (event) => {
@@ -292,6 +260,7 @@ let pauseAction = function(){
     pauseModal.querySelector("#resumeAll").addEventListener("click", function () {
         pauseModal.style.display = "none";
         board.style.display = "flex";
+        fishPlayer.style.display = "block" ;
         // console.log("flex2") ;
         escapeFlag = false;
         container.onmousemove = (event) => {
@@ -326,4 +295,4 @@ let pauseAction = function(){
 
 
 
-// backgroundSound = setInterval(playUnderWaterSound, 6500);
+backgroundSound = setInterval(playUnderWaterSound, 6500);
