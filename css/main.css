@@ -122,15 +122,13 @@ perspective: 1000px;
 #currentPlayerBadges{
 height:100%;
 width: 100% ;
-padding-top: 6% ;
 display: none;
 position: absolute;
 z-index: 9991;
 top:0 ;
 left: 0 ;
-background: url("../Div/Welcome/bg.PNG") fixed round ;
+background: url("../Div/Welcome/sea-background.jpg") fixed round ;
 background-size: cover;
-padding: 20px ;
 }
 
 #backBtn{
@@ -168,6 +166,18 @@ img.finalBadges{
   width: 20%;
   height: 20%;
 }
+
+#currentPlayerBadges button {
+  margin: 20px auto;
+  width: auto;
+  height: 20%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  outline: 0;
+}
+
 #gameOver , #CongDiv{
   z-index: -150;
   display: none ;
@@ -269,11 +279,12 @@ margin-top:0%;
 }
 
 
-#exitBtn, #playAgain1, #badgeBtn, #playAgain2
+#exitBtn, #playAgain1, #badgeBtn, #playAgain2, #backBtn
 {
   background: no-repeat;
   background-size: contain;
   background-image: url(../Div/GameOver/btn-bg.png);
   background-position-x: center;
   background-position-y: center;
+  outline: 0;
 }

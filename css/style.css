@@ -232,10 +232,10 @@ width:50px;
 /*********************** new **********************************/
 
 #mainBackground img{
-  position: fixed;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: 555 ;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 555;
 }
 
 #EnterNameSec{
@@ -825,3 +825,11 @@ margin-right: 6.666%;
   display: block;
   z-index: 2000;
 } */
+
+#playerBadgesDiv{
+  height: 40%;
+  width: 100%;
+  position: absolute;
+  margin-top: 4%;
+}
+
