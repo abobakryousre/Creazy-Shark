@@ -5,7 +5,7 @@
 ![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)
 #
 # Crazy-Shark
-this is a feeding Fish Game
+This is a feeding Fish Game
 #
 
 ## Table of content
@@ -22,8 +22,8 @@ Click on Logo to Start Play :
 # How To Play
 - Use your mouse to move the fish. 
 - Not to be eaten by a bigger fish.
-- Collect a lot of sea stars because your lives will increase one for each five sea stars.
-- Eat the speacial fish at level 2 to make all big fishes smaller than you.
+- Collect a lot of sea stars because your lives will increase for each number of sea stars.
+- Eat the golden fish at the middle of each level to make all big fishes smaller than you.
 - Try to finish all levels as fast as possible to get our speed badges for every level.
 
 # Tecnology Used
