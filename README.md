@@ -16,7 +16,7 @@ this is a feeding Fish Game
 
 # Play
 Click on Logo to Start Play :
-[![Logo](./images/git_project.png)](https://crazy-shark.herokuapp.com/)
+[![Logo](./Div/Welcome/logo3.png)](https://crazy-shark.herokuapp.com/)
 
 
 # How To Play
