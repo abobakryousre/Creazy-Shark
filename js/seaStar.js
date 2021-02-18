@@ -32,7 +32,7 @@ let seaStarMotion= () =>{
 
   let bonusAdd= () =>{
 
-    
+      playblobSound() ;
       seaStarNum++;
       seaStarObj.style.display='none';
       seaStarObj.style.top=0+'px';

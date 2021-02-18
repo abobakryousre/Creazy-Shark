@@ -5,6 +5,7 @@ let container = document.getElementById("container");           // game space
 let board = document.getElementById("board");                   // board status above game space 
 
 // audio elements of the Game Displayed : none (default)
+let blobSound = document.getElementById("blob");
 let eatSound = document.getElementById("eat");
 let dyingSound = document.getElementById("die");
 let levelUpSound = document.getElementById("level");
@@ -66,7 +67,7 @@ const LEVEL1_WEIGHT = 1.1  ;
 const LEVEL2_WEIGHT = 1.4  ;
 const LEVEL3_WEIGHT = 1.7  ;
 
-const LEVEL_SIGN_WIDTH = 300 ;
+const LEVEL_SIGN_WIDTH = 250 ;
 const BADGE_WIDTH = 180 ;
 
 fishPlayer.style.width = INIT_FISH_WIDTH ;

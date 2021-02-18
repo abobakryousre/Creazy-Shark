@@ -143,7 +143,7 @@ let startGame = () => {
     currentPlayerTempBadge=[false,false,false];
     fishEnemiesList = [];
     fishPlayer.src = "./images/Characters/player" + playerNumber + "-right.gif";
-    // backgroundWebm.src = "videos/background.webm";
+    backgroundWebm.src = "videos/background.webm";
     backgroundVideo.load();
     removeBadgesFromDashBoard();
     showLevelUpNotificationImage();
@@ -191,7 +191,9 @@ let CheckEndOfGame = ()=> {
 
 
 let exit = function () {
+   
     location.reload();
+    localStorage.removeItem(playerNa.value);  // use this mod for now ****#
 };
 
 
@@ -277,4 +279,9 @@ let pauseAction = function(){
 
 
 
-backgroundSound = setInterval(playUnderWaterSound, 6500);
+backgroundSound = setInterval(playUnderWaterSound, 6500 * 2 );
+window.addEventListener('beforeunload', function (e) {
+
+    localStorage.removeItem(playerNa.value);  // use this mod for now ****#
+    
+});

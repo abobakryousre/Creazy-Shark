@@ -21,6 +21,11 @@ button:hover {
     animation-duration: 6s;
   }
 
+  #gameLogo{
+    top: 10%;
+    margin-top: 0px;
+  }
+
   .loader {
     color: #ffffff;
     font-size: 90px;

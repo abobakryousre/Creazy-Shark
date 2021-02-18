@@ -41,7 +41,7 @@ let detectCollisionBetweenPlayerAndSpecialFish = () => {
         && parseInt(fishPlayer.style.top) <= specialFish.y + specialFish.height) {
 
         container.removeChild(specialFish.element);
-
+        playblobSound() ;
         for (let i = 0; i < fishEnemiesList.length; i++) {
 
             fishEnemiesList[i].height = INIT_FISH_HEIGHT / 2 ;
