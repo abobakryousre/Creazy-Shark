@@ -1,6 +1,6 @@
 let SEA_STAR_GIFT_NUM = 5 ;
 let scoreAndLevel =  () => {
-  SEA_STAR_GIFT_NUM = 4 + LEVEL_SPEED ;
+  SEA_STAR_GIFT_NUM = 2 + LEVEL_SPEED + level ;
   
   if (seaStarNum === SEA_STAR_GIFT_NUM ) {         // for every 5 star earn 1 life 
     lives++;

@@ -7,9 +7,9 @@ let detectCollisionBetweenPlayerFishAndEnemyFishesV2 = function () {
 
             if (fishEnemiesList[i].direction === "right") {
                   if (parseInt(fishPlayer.style.left) > fishEnemiesList[i].x) {
-                        if (fishEnemiesList[i].width >= parseInt(fishPlayer.style.left) - fishEnemiesList[i].x
-                              && parseInt(fishPlayer.style.top) >= fishEnemiesList[i].y - fishPlayer.height //+ 20
-                              && parseInt(fishPlayer.style.top) <= fishEnemiesList[i].y + fishEnemiesList[i].height /*- 20*/) {
+                        if (fishEnemiesList[i].width >= parseInt(fishPlayer.style.left) - fishEnemiesList[i].x + 5
+                              && parseInt(fishPlayer.style.top) >= fishEnemiesList[i].y - fishPlayer.height + 15
+                              && parseInt(fishPlayer.style.top) <= fishEnemiesList[i].y + fishEnemiesList[i].height - 15) {
 
                               if (fishPlayer.height < fishEnemiesList[i].height) {
 
@@ -35,8 +35,8 @@ let detectCollisionBetweenPlayerFishAndEnemyFishesV2 = function () {
 
                         if (fishEnemiesList[i].x - parseInt(fishPlayer.style.left) <= fishPlayer.width
                               && fishEnemiesList[i].x - parseInt(fishPlayer.style.left) >= 0
-                              && parseInt(fishPlayer.style.top) >= fishEnemiesList[i].y - fishPlayer.height //+ 20
-                              && parseInt(fishPlayer.style.top) <= fishEnemiesList[i].y + fishEnemiesList[i].height /*- 20*/) {
+                              && parseInt(fishPlayer.style.top) >= fishEnemiesList[i].y - fishPlayer.height + 15
+                              && parseInt(fishPlayer.style.top) <= fishEnemiesList[i].y + fishEnemiesList[i].height - 15) {
 
 
                               if (fishPlayer.height < fishEnemiesList[i].height) {
@@ -62,9 +62,9 @@ let detectCollisionBetweenPlayerFishAndEnemyFishesV2 = function () {
             } else {
 
                   if (parseInt(fishPlayer.style.left) > fishEnemiesList[i].x) {
-                        if (fishEnemiesList[i].width >= parseInt(fishPlayer.style.left) - fishEnemiesList[i].x
-                              && parseInt(fishPlayer.style.top) >= fishEnemiesList[i].y - fishPlayer.height //+ 20
-                              && parseInt(fishPlayer.style.top) <= fishEnemiesList[i].y + fishEnemiesList[i].height /*- 20*/) {
+                        if (fishEnemiesList[i].width >= parseInt(fishPlayer.style.left) - fishEnemiesList[i].x + 5
+                              && parseInt(fishPlayer.style.top) >= fishEnemiesList[i].y - fishPlayer.height + 15
+                              && parseInt(fishPlayer.style.top) <= fishEnemiesList[i].y + fishEnemiesList[i].height - 15) {
 
                               if (fishPlayer.height < fishEnemiesList[i].height) {
 
@@ -88,8 +88,8 @@ let detectCollisionBetweenPlayerFishAndEnemyFishesV2 = function () {
 
                         if (fishEnemiesList[i].x - parseInt(fishPlayer.style.left) <= fishPlayer.width
                               && fishEnemiesList[i].x - parseInt(fishPlayer.style.left) >= 0
-                              && parseInt(fishPlayer.style.top) >= fishEnemiesList[i].y - fishPlayer.height //+ 20
-                              && parseInt(fishPlayer.style.top) <= fishEnemiesList[i].y + fishEnemiesList[i].height/* - 20*/) {
+                              && parseInt(fishPlayer.style.top) >= fishEnemiesList[i].y - fishPlayer.height + 15
+                              && parseInt(fishPlayer.style.top) <= fishEnemiesList[i].y + fishEnemiesList[i].height - 15) {
 
                               if (fishPlayer.height < fishEnemiesList[i].height) {
 
@@ -118,7 +118,7 @@ let detectCollisionBetweenPlayerFishAndEnemyFishesV2 = function () {
 let boom = function () {
 
       bom.src = "./images/Box_And_Boom/BOOOM.gif";
-      bom.height = INIT_FISH_WIDTH * 1 ;
+      bom.height = INIT_FISH_WIDTH * 2 ;
       bom.width = INIT_FISH_WIDTH * 1 ;
       bom.style.position = "absolute";
       bom.style.left = parseInt(fishPlayer.style.left) - containerBoundingRect.left + "px";
