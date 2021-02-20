@@ -2,7 +2,7 @@
 let nameEnt=document.getElementById("EnterNameSec");
 let load = document.getElementById("load");
 let playerNa = document.getElementById("nameEnter");
-let btnName=document.getElementById("btnGame");
+let btnName = document.getElementById("btnGame");
 /**** */
 
 let staticBG = document.getElementById("mainBackground") ;
@@ -32,8 +32,8 @@ buttonSound.src = "sound/bubble_01.ogg";
 let easyLevel = document.getElementById("easy");
 let meduimLevel = document.getElementById("meduim");
 let hardLevel = document.getElementById("hard");
-let LEVEL_SPEED = 1 ;  
-let DIFFCUITY = "easy" ;
+let LEVEL_SPEED = 1;
+let DIFFCUITY = "easy";
 
 // functions
 
@@ -67,18 +67,17 @@ backFromAboutUsBtn.addEventListener("click", loadWelcomeScene);
 backFromCharacters.addEventListener("click", loadWelcomeScene);
 backFromLevel.addEventListener("click", loadCharacterScene);
 
-
 function fade(element) {
-    let op = 1;  // initial opacity
-    let timer = setInterval(function () {
-        if (op <= 0.1){
-            clearInterval(timer);
-            element.style.display = 'none';
-        }
-        element.style.opacity = op;
-        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-        op -= op * 0.1;
-    }, 25);
+  let op = 1; // initial opacity
+  let timer = setInterval(function () {
+    if (op <= 0.1) {
+      clearInterval(timer);
+      element.style.display = "none";
+    }
+    element.style.opacity = op;
+    element.style.filter = "alpha(opacity=" + op * 100 + ")";
+    op -= op * 0.1;
+  }, 25);
 }
 
 function checkUsername(event){
@@ -122,11 +121,10 @@ function choseCharacters(){
 function howToPlay(){
     buttonSound.play();
 
-    fade(welcomeScene);
-    setTimeout(()=>{
-        howToPlayScene.setAttribute("style", "display: block");
-    }, 500); 
-    
+  fade(welcomeScene);
+  setTimeout(() => {
+    howToPlayScene.setAttribute("style", "display: block");
+  }, 500);
 }
 
 function displayInforamtion(){
@@ -156,6 +154,6 @@ function loadLevelScene(){
 }
 
 let setPlayerNumber = (num) => {
-    playerNumber = num;
-    loadLevelScene();
+  playerNumber = num;
+  loadLevelScene();
 };

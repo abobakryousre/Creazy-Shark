@@ -21,6 +21,8 @@ let adjustBoard = (score, level, charID, lives, seaStarNum) => {
   
   charImg.src = "images/Characters/player" + charID + "-right.gif";
 
+  difuclltySpan.textContent = DIFFCUITY;
+
   //Adjusting level
  
   levelNum.textContent = level;
