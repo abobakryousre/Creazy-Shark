@@ -1,14 +1,18 @@
+
 body{
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
-    background: url(/img/login.jpg) no-repeat;
-    background-size: cover;
+}
+
+#mainBackground img{
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .login{
 
-    display: none;
     text-align: center;
     position: absolute;
     width: 500px;
@@ -34,13 +38,20 @@ body{
     font-size: 20px;
 }
 #loginBtn{
-    border-radius: 12px;
+    border-radius: 500px;
     font-size: 20px;
     padding: 5px;
     margin: 20px;
-    color: black;
+    color: black;    
 }
 
+#loginBtn:hover{
+    background: rgba(239, 239, 239, .1 );
+    transform: scale(1.5);
+    border: none;
+    color: white;
+    transition: 0.3s;
+}
 
 .welcome{
     display: none;
@@ -64,8 +75,17 @@ body{
     border-radius: 12px;
     color: black;
 }
-.how-to-play{
+.welcome button:hover{
+    background: rgba(239, 239, 239, .1 );
+    transform: scale(1.5);
+    border: none;
+    color: white;
+    transition: 0.3s;
+}
 
+
+.how-to-play{
+    display: none;
     text-align: center;
     position: absolute;
     width: 500px;
@@ -86,12 +106,21 @@ body{
     font-size: 20px;
     color: black;
 }
-.about{
 
+.how-to-play button:hover{
+    background: rgba(239, 239, 239, .1 );
+    transform: scale(1.5);
+    border: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.about{
+    display: none;
     text-align: center;
     position: absolute;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     font-size: 20px;    
     top: 50%;
     left: 50%;
@@ -103,4 +132,99 @@ body{
     border-radius: 12px;
     font-size: 20px;
     color: black;
+    padding: 5px;
+}
+
+.about button:hover{
+    background: rgba(239, 239, 239, .1 );
+    transform: scale(1.5);
+    border: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.characters{
+    display: none;
+    text-align: center;
+    position: absolute;
+    width: 800px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    box-shadow: 8px 8px 50px #000;
+}
+.characters button{
+    border-radius: 12px;
+    font-size: 20px;
+    margin: 0px 100px;
+    color: black;
+
+}
+.characters button:hover{
+    background: rgba(239, 239, 239, .1 );
+    transform: scale(1.5);
+    border: none;
+    color: white;
+    transition: 0.3s;
+    
+}
+.characters img{
+    margin: 50px 30px 50px 50px;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    border-radius: 100px;
+}
+.characters p{
+    margin: 50px 100px;
+    font-size: 30px;
+}
+.levels{
+    display: none;
+    text-align: center;
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    box-shadow: 8px 8px 50px #000;
+
+}
+
+.levels div {
+    box-shadow: 8px 8px 50px #000;
+    font-size: 20px;
+    border-radius: 200px;
+    height: 120px;
+    width: 120px;
+    cursor: pointer;
+    display: block;
+    margin: 40px 200px;
+}
+
+.levels div  p{
+    text-align: center;
+    font-size: 20px;
+    padding: 50px 10px;
+}
+.levels div p:hover{
+    transform: scale(1.5);
+}
+
+.levels button{
+    border-radius: 12px;
+    font-size: 20px;
+    margin: 0px 0px 0px 30px;
+    color: black;
+}
+.levels button:hover{
+    background: rgba(239, 239, 239, .1 );
+    transform: scale(1.5);
+    border: none;
+    color: white;
+    transition: 0.3s;
 }

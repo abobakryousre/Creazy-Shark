@@ -1,8 +1,23 @@
 
+let backgroundIndex = 0;
+let backgrounds = ["../img/loginPage/login3.jpeg",
+"../img/loginPage/login4.jpeg",
+ "../img/loginPage/login5.jpeg",
+"../img/loginPage/login6.jpeg",
+"../img/loginPage/login7.jpeg",
+"../img/loginPage/login8.jpeg",
+"../img/loginPage/login9.jpeg",
+"../img/loginPage/login11.jpeg",
+"../img/loginPage/login.jpg",
+]
+
 let loginScene = document.getElementsByClassName("login")[0];
 let welcomeScene = document.getElementsByClassName("welcome")[0];
 let howToPlayScene = document.getElementsByClassName("how-to-play")[0];
 let aboutScene = document.getElementsByClassName("about")[0];
+let charactersScene = document.getElementsByClassName("characters")[0];
+let levelScene = document.getElementsByClassName("levels")[0];
+let loginBackground = document.getElementById("loginBackground");
 
 let username = document.getElementById("username");
 let loginBtn = document.getElementById("loginBtn");
@@ -12,19 +27,86 @@ let aboutBtn = document.getElementById("about");
 let exitBtn = document.getElementById("exit");
 let backFromHowToPlayBtn = document.getElementById("backFromHowToPlay");
 let backFromAboutUsBtn = document.getElementById("backFromAboutUs");
+let backFromCharacters = document.getElementById("backFromCharacters");
+let backFromLevel = document.getElementById("backFromLevel");
+let characterOne = document.getElementById("characterOne");
+let characterTwo = document.getElementById("characterTwo");
+let characterThree = document.getElementById("characterThree");
 
-loginBtn.addEventListener("click", checkUsername); // why when i called the checkUsername Function with () not working
-playBtn.addEventListener("click", startGame);
+let buttonSound = document.createElement("audio");
+buttonSound.src = "./sound/bubble_01.ogg";
+let level = "";
+
+
+let easyLevel = document.getElementById("easy");
+let meduimLevel = document.getElementById("meduim");
+let hardLevel = document.getElementById("hard");
+
+easyLevel.addEventListener("click", ()=>{
+    level = "easy";
+    console.log(level + "  username is: " + username.value);
+    // start game here and use the username and level in your game
+});
+
+meduimLevel.addEventListener("click", ()=>{
+    level = "meduim";
+    console.log(level + "  username is: " + username.value);
+    // start game here and use the username and level in your game
+
+});
+
+hardLevel.addEventListener("click", ()=>{
+    level = "hard";
+    console.log(level + "  username is: " + username.value);
+    // start game here and use the username and level in your game
+
+})
+
+loginBtn.addEventListener("click", checkUsername);
+playBtn.addEventListener("click", choseCharacters);
 howToPlayBtn.addEventListener("click", howToPlay);
 aboutBtn.addEventListener("click", displayInforamtion);
 exitBtn.addEventListener("click", loadLoginScene);
+
+characterOne.addEventListener("click", loadLevelScene);
+characterTwo.addEventListener("click", loadLevelScene);
+characterThree.addEventListener("click", loadLevelScene);
+
+
 backFromHowToPlayBtn.addEventListener("click", loadWelcomeScene);
 backFromAboutUsBtn.addEventListener("click", loadWelcomeScene);
+backFromCharacters.addEventListener("click", loadWelcomeScene);
+backFromLevel.addEventListener("click", loadCharacterScene);
 
+
+function changeBackground(){
+    loginBackground.src = backgrounds[backgroundIndex];
+
+    if(backgroundIndex < backgrounds.length - 1){
+        backgroundIndex ++;
+    }else{
+        backgroundIndex = 0;
+    }
+}
+
+setInterval(changeBackground,4000);
+
+function fade(element) {
+    let op = 1;  // initial opacity
+    let timer = setInterval(function () {
+        if (op <= 0.1){
+            clearInterval(timer);
+            element.style.display = 'none';
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op -= op * 0.1;
+    }, 50);
+}
 
 function checkUsername(event){
-
-    if(username.value.match(/\b([a-zÀ-ÿ][-,a-z. ']+[ ]*)+/)){
+    buttonSound.play();
+    if(username.value){
         loadWelcomeScene();
     }else{
         alert("invaled username");
@@ -32,24 +114,59 @@ function checkUsername(event){
     }
 }
 function loadWelcomeScene(){
-    loginScene.setAttribute("style", "display: none");
-    howToPlayScene.setAttribute("style", "display: none");
-    aboutScene.setAttribute("style", "display: none");
-    welcomeScene.setAttribute("style", "display: block");
+    buttonSound.play();
+    fade(loginScene);
+    fade(howToPlayScene);
+    fade(aboutScene);
+    fade(charactersScene);
+    setTimeout(()=>{
+        welcomeScene.setAttribute("style", "display: block");
+    }, 500);
 }
-function loadLoginScene(event){
-    welcomeScene.setAttribute("style", "display: none");
-    loginScene.setAttribute("style", "display: block");
+function loadLoginScene(){
+    buttonSound.play();
+    fade(welcomeScene);
+    setTimeout(()=>{
+        loginScene.setAttribute("style", "display: block");
+    }, 500);
 }
-function startGame(event){
+function choseCharacters(){
+    buttonSound.play();
+    fade(welcomeScene);
+    setTimeout(()=>{
+        charactersScene.setAttribute("style", "display: block");
+    }, 500);    
 
 }
-function howToPlay(event){
-    welcomeScene.setAttribute("style", "display: none");
-    howToPlayScene.setAttribute("style", "display: block");
+function howToPlay(){
+    buttonSound.play();
+
+    fade(welcomeScene);
+    setTimeout(()=>{
+        howToPlayScene.setAttribute("style", "display: block");
+    }, 500); 
+    
+}
+function displayInforamtion(){
+    buttonSound.play();
+    fade(welcomeScene);
+    setTimeout(()=>{
+        aboutScene.setAttribute("style", "display: block");
+    }, 500); 
+    
+}
+function loadCharacterScene(){
+    buttonSound.play();
+    fade(levelScene);
+    setTimeout(()=>{
+        charactersScene.setAttribute("style", "display: block");
+    }, 500); 
 
 }
-function displayInforamtion(event){
-    welcomeScene.setAttribute("style", "display: none");
-    aboutScene.setAttribute("style", "display: block");
+function loadLevelScene(){
+    buttonSound.play();
+    fade(charactersScene);
+    setTimeout(()=>{
+        levelScene.setAttribute("style", "display: block");
+    }, 500); 
 }
