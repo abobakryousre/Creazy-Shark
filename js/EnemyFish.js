@@ -1,5 +1,3 @@
-
-
 class EnemyFish{
     constructor(x, y, imgSrc, weight, direction,directionVertical){
         this.x = x;
@@ -11,7 +9,7 @@ class EnemyFish{
         this.directionVertical=directionVertical;
         this.weight = weight;
         this.speedX = 2.5 * LEVEL_SPEED + (weight * LEVEL_SPEED )*level ;//+ (2 * LEVEL_SPEED);
-        this.speedY = this.speedX / 3 ; //0.3*level + (0.7 * LEVEL_SPEED * weight);
+        this.speedY = this.speedX / 3 ;                  //0.3*level + (0.7 * LEVEL_SPEED * weight);
         this.element;
     }
 

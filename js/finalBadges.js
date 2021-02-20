@@ -1,5 +1,4 @@
 
-
 let updateCurrentPlayerBadges = () => {
 
 
@@ -24,14 +23,5 @@ let updateCurrentPlayerBadges = () => {
       else
          finalBadgesArr[i].style.display = "none";
    }
-
-
-   // console.log(finalBadges);
-
-
-
-
-
-
 
 }

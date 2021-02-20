@@ -4,8 +4,13 @@ let playUnderWaterSound = () => {
 };
 
 
+
 let playEatingSound = () => {
     eatSound.play();
+};
+
+let playblobSound = () => {
+    blobSound.play();
 };
 
 let playdyingSound = () => {
@@ -39,7 +44,8 @@ let muteAll = () =>{
     dyingSound.muted = true ;
     levelUpSound.muted = true ;
     sizeUpSound.muted = true ;
-    console.log("mute")
+    blobSound.muted = true ;
+    
 }
 
 let unMuteAll = ()=>{
@@ -50,5 +56,5 @@ let unMuteAll = ()=>{
     dyingSound.muted = false ;
     levelUpSound.muted = false ;
     sizeUpSound.muted = false ;
-    console.log("unmute")
+    blobSound.muted = false ;
 }

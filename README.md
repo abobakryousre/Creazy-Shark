@@ -5,7 +5,7 @@
 ![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)
 #
 # Crazy-Shark
-this is a feeding Fish Game
+This is a feeding Fish Game
 #
 
 ## Table of content
@@ -16,20 +16,20 @@ this is a feeding Fish Game
 
 # Play
 Click on Logo to Start Play :
-[![Logo](./images/git_project.png)](https://crazy-shark.herokuapp.com/)
+[![Logo](./Div/Welcome/logo3.png)](https://crazy-shark.herokuapp.com/)
 
 
 # How To Play
 - Use your mouse to move the fish. 
 - Not to be eaten by a bigger fish.
-- Collect a lot of sea stars because your lives will increase one for each five sea stars.
-- Eat the speacial fish at level 2 to make all big fishes smaller than you.
+- Collect a lot of sea stars because your lives will increase for each number of sea stars.
+- Eat the golden fish at the middle of each level to make all big fishes smaller than you.
 - Try to finish all levels as fast as possible to get our speed badges for every level.
 
 # Tecnology Used
-* HTML
-* CSS
-* JavaScript
+* HTML 5
+* CSS 3
+* JavaScript ES6
 
 # Team    
 1) [Abdelrhman Montaser](https://www.linkedin.com/in/abdelrahman-montaser/)

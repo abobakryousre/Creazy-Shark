@@ -1,6 +1,4 @@
 
-// specialFish = new EnemyFish(-100, window.innerHeight / 2, "specialFish.gif", 0.4, "right", "");
-// specialFish.createFish();
 
 let showSpecialFish = () => {
 
@@ -43,7 +41,7 @@ let detectCollisionBetweenPlayerAndSpecialFish = () => {
         && parseInt(fishPlayer.style.top) <= specialFish.y + specialFish.height) {
 
         container.removeChild(specialFish.element);
-
+        playblobSound() ;
         for (let i = 0; i < fishEnemiesList.length; i++) {
 
             fishEnemiesList[i].height = INIT_FISH_HEIGHT / 2 ;

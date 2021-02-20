@@ -30,234 +30,37 @@ video {
   transform: translateX(-50%) translateY(-50%);
   transition: 1s opacity;
 }
-/* 
-#board{
-   position:relative;
-   width:100%;
-   height:10%;
-   margin-left: 0% ;
-   margin-top: 1.5% ;
-}
-#scoreDiv {
-   position:absolute;
-   width:15%;
-   height:40%;
-   left:0%;
-   top:2%;
-}
-#scoreImg{
-  height:100%;
-  width:40%;
-  float:left;
-}
-#scoreNumDiv{
-  height:100%;
-  width:57%;
-  display: block;
-  float: right;
-}
-.scoreNum{
- height:100%;
- width:25%;
- float:left;
-}
-#growthDiv{
-  position:absolute;
-  width:30%;
-  height:40%;
-  display: inline-block;
-  left:16%;
-  top:2%;
-}
-#growthImg{
-    height:100%;
-    width:28%;
-    float: left;
-}
-#growthBarTotal{
-  height:100%;
-  width:70%;
-  display: block;
-  background-color:#333;
-  border-radius: 5px ;
-  float: right;
-  position: relative;
-}
-#growthBarActual{
-  height:100%;
-  border-radius: 5px ;
-  background-color:dodgerblue;
-  display:block;
-  float: left;
 
-}
-#progressNotch1{
-  height:100%;
-  width:1px;
-  background-color: SandyBrown;
-  left: 33.33%;
-  display: inline-block;
-  position: absolute;
-}
-
-#progressNotch2{
-  height:100%;
-  width:1px;
-  background-color: SandyBrown;
-  left:66.66%;
-  display: inline-block;
-  position: absolute;
-}
-
-#levelDiv{
-  position:absolute;
-  width:15%;
-  height:40%;
-  display: inline-block;
-  left:47%;
-  top:2%;
-}
-#levelImg{
-    height:100%;
-    width:60%;
-    float: left;
-}
- #levelNum{
-   height:100%;
-   width:15%;
-   float: right;
-   margin-right:22%;
- }
- #liveDiv{
-  position:absolute;
-  width:10%;
-  height:40%;
-  right:30%;
-  top:2%;
-}
-#charImg{
-  height:100%;
-  width:50%;
-  float: left;
-
-}
-#liveNumDiv{
-  height:100%;
-  width:50%;
-  display: block;
-  float: right;
-
-}
-.liveNum{
- height:100%;
- width:40%;
- float: left;
-}
-#menuDiv{
-  position:absolute;
-  width:30%;
-  height:40%;
-  left:16%;
-  top:44%
-}
-
-#menuImg{
-   height:100%;
-   width:28%;
-   float: left;
-}
-#menuCharDiv{
- height:100%;
- width:70%;
- display: block;
- float: right;
-}
-
-.menuChar{
-height:100%;
-width:20%;
-float:left;
-margin-left: 6.666%;
-margin-right: 6.666%;
-}
-
-#seaStar{
-position:absolute;
-top:0px;
-display: none;
-height:50px;
-width:50px;
-}
-
-#seaStarDiv{
- position:absolute;
- width:10%;
- height:40%;
- display: inline-block;
- left:0%;
- top:45%;
-}
-#seaStarImg{
-   height:100%;
-   width:30%;
-   float: left;
-}
-#seaStarNum{
-  height:100%;
-  width:20%;
-  float: right;
-  margin-right:46%;
-}
-
-
-#badgeImg{
-  height:100%;
-  width:20%;
-  float:left;
-}
-#playerBadgesDiv{
-  height:100%;
-  width:80%;
-  display: block;
-  float: right;
-}
-
-.bad{
- height:100%;
- width:19%;
- margin-left: 1%;
- float:right;
- border: solid 0.5px SandyBrown;
-} */
 
 /*********************** new **********************************/
 
 #mainBackground img {
   position: fixed;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: 555;
+  width: 100vw;
+  height: 100%;
+  z-index: 555;;
 }
 
 #EnterNameSec {
   text-align: center;
   position: absolute;
-  width: 30%;
-  height: 40%;
+  width: 40%;
+  height: 55%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: rebeccapurple;
   box-shadow: 8px 8px 50px #000;
   z-index: 555;
 }
 
 #EnterNameSec header {
-  width: 80%;
-  padding: 5px 0px;
-  margin: auto;
+  padding: 0px;
+  margin-top: 7%;
   font-size: 30px;
-  border-bottom: 3px solid rgb(0, 0, 0);
+  box-shadow: inherit;
+  font-size: xxx-large ;
+  font-family: emoji;
 }
 
 #EnterNameSec #nameEnter {
@@ -288,8 +91,7 @@ width:50px;
   text-align: center;
   position: absolute;
   width: 500px;
-  height: 500px;
-
+  height: 80%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -297,7 +99,17 @@ width:50px;
   box-shadow: 8px 8px 50px #000;
   z-index: 555;
 }
-.welcome button {
+.welcome header{
+  color: rebeccapurple;
+  margin-top: 7%;
+  width: 100%;
+  box-shadow: inherit;
+  font-size: xx-large;
+  font-family: emoji;
+  margin-left: 0%;
+}
+
+.welcome button{
   display: inline-block;
   width: 100px;
   height: 50px;
@@ -529,215 +341,10 @@ width:50px;
 
 /**** board ****/
 
-/* #board{
-   position:relative;
-   width:100%;
-   height:10%;
-   margin-left: 0% ;
-   margin-top: 1.5% ;
-}
-#scoreDiv {
-   position:absolute;
-   width:15%;
-   height:40%;
-   left:0%;
-   top:2%;
-}
-#scoreImg{
-  height:100%;
-  width:40%;
-  float:left;
-}
-#scoreNumDiv{
-  height:100%;
-  width:57%;
-  display: block;
-  float: right;
-}
-.scoreNum{
- height:100%;
- width:25%;
- float:left;
-}
-#growthDiv{
-  position:absolute;
-  width:30%;
-  height:40%;
-  display: inline-block;
-  left:16%;
-  top:2%;
-}
-#growthImg{
-    height:100%;
-    width:28%;
-    float: left;
-}
-#growthBarTotal{
-  height:100%;
-  width:70%;
-  display: block;
-  background-color:#333;
-  border-radius: 5px ;
-  float: right;
-  position: relative;
-}
-#growthBarActual{
-  height:100%;
-  border-radius: 5px ;
-  background-color:dodgerblue;
-  display:block;
-  float: left;
-
-}
-#progressNotch1{
-  height:100%;
-  width:1px;
-  background-color: SandyBrown;
-  left: 33.33%;
-  display: inline-block;
-  position: absolute;
-}
-
-#progressNotch2{
-  height:100%;
-  width:1px;
-  background-color: SandyBrown;
-  left:66.66%;
-  display: inline-block;
-  position: absolute;
-}
-
-#levelDiv{
-  position:absolute;
-  width:15%;
-  height:40%;
-  display: inline-block;
-  left:47%;
-  top:2%;
-}
-#levelImg{
-    height:100%;
-    width:60%;
-    float: left;
-}
- #levelNum{
-   height:100%;
-   width:15%;
-   float: right;
-   margin-right:22%;
- }
- #liveDiv{
-  position:absolute;
-  width:10%;
-  height:40%;
-  right:30%;
-  top:2%;
-}
-#charImg{
-  height:100%;
-  width:50%;
-  float: left;
-
-}
-#liveNumDiv{
-  height:100%;
-  width:50%;
-  display: block;
-  float: right;
-
-}
-.liveNum{
- height:100%;
- width:40%;
- float: left;
-}
-#menuDiv{
-  position:absolute;
-  width:30%;
-  height:40%;
-  left:16%;
-  top:44%
-}
-
-#menuImg{
-   height:100%;
-   width:28%;
-   float: left;
-}
-#menuCharDiv{
- height:100%;
- width:70%;
- display: block;
- float: right;
-}
-
-.menuChar{
-height:100%;
-width:20%;
-float:left;
-margin-left: 6.666%;
-margin-right: 6.666%;
-} */
-
-/*
-#seaStarDiv{
- position:absolute;
- width:10%;
- height:40%;
- display: inline-block;
- left:0%;
- top:45%;
-}
-#seaStarImg{
-   height:100%;
-   width:30%;
-   float: left;
-}
-#seaStarNum{
-  height:100%;
-  width:20%;
-  float: right;
-  margin-right:46%;
-}
-
-#badgeDiv {
-   position:absolute;
-   width:29%;
-   height:100%;
-   right:0%;
-   top:2%;
-
-}
-#badgeImg{
-  height:100%;
-  width:20%;
-  float:left;
-}
-#playerBadgesDiv{
-  height:100%;
-  width:80%;
-  display: block;
-  float: right;
-} */
 #seaStarDiv{
   text-align: center;
 }
 
-/* #badgeDiv {
-  position:absolute;
-  width:3%;
-  height:100%;
-  right:0%;
-  top:2%;
-
-} */
-#seaStarDiv{
-  text-align: center;
-}
-
-/* #seaStarDiv>span{
-  color:rebeccapurple;
-} */
 #badgeDiv {
   width: 12.5%;
 }
@@ -922,4 +529,12 @@ margin-right: 6.666%;
 #resumeAll{
   margin-left: 0%;
   margin-right: 25%;
+}
+
+
+#playerBadgesDiv{
+  height: 40%;
+  width: 100%;
+  position: absolute;
+  margin-top: 4%;
 }

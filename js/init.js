@@ -1,12 +1,11 @@
 
-// export * as src from "./init.js" ;
-
 // DOM ELEMENTS
 let fishPlayer = document.getElementById("fishPlayer");         // player's fish image  
 let container = document.getElementById("container");           // game space 
 let board = document.getElementById("board");                   // board status above game space 
 
 // audio elements of the Game Displayed : none (default)
+let blobSound = document.getElementById("blob");
 let eatSound = document.getElementById("eat");
 let dyingSound = document.getElementById("die");
 let levelUpSound = document.getElementById("level");
@@ -40,18 +39,13 @@ let levelDiv = document.getElementById('levelDiv');
 let seaStarObj = document.getElementById('seaStar');
 let seaStarImgNum = document.getElementById('seaStarNum');
 let timeDiv = document.getElementById('timer');
-// let secondNumArr = document.getElementsByClassName('secondNum');
-// let minNumArr = document.getElementsByClassName('minNum');
-// let hourNumArr = document.getElementsByClassName('hourNum');
+
 let backgroundVideo = document.getElementById("backgroundVideo");
 let backgroundWebm = document.getElementById("backgroundWebm");
 let containerBoundingRect = container.getBoundingClientRect();
 
 let specialFish;                                                // just declaring special fish variable 
 let badgrArr = document.getElementsByClassName('bad');
-
-
-
 
 let finalBadgesArr=document.getElementsByClassName("finalBadges");
 /////////////////////////////////////////////
@@ -67,10 +61,6 @@ let foodTimer = 0;
 const INIT_FISH_WIDTH = 100 ;                       // fish size   level= size * speed * num * 1/ time * 1/seastar * 1/special fish
 const INIT_FISH_HEIGHT = INIT_FISH_WIDTH - 40 ;
 
-                              // enemy fish speed 0 default
-                          // num of fish enemies 9 default
-
-
 
 const LEVEL0_WEIGHT = 0.8  ;
 const LEVEL1_WEIGHT = 1.1  ;    
@@ -82,6 +72,7 @@ const BADGE_WIDTH = 180 ;
 
 fishPlayer.style.width = INIT_FISH_WIDTH ;
 fishPlayer.style.height = INIT_FISH_HEIGHT ;
+
 /// end of const
 
 let currentPlayerLevel1Time = null;

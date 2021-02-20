@@ -1,6 +1,6 @@
 let SEA_STAR_GIFT_NUM = 5 ;
 let scoreAndLevel =  () => {
-  SEA_STAR_GIFT_NUM = 4 + LEVEL_SPEED ;
+  SEA_STAR_GIFT_NUM = 2 + LEVEL_SPEED + level ;
   
   if (seaStarNum === SEA_STAR_GIFT_NUM ) {         // for every 5 star earn 1 life 
     lives++;
@@ -69,12 +69,12 @@ let showLevelUpNotificationImage = () => {
   let levelSign = document.createElement("img");
 
   levelSign.src = "./images/Levels/level" + level + ".png";
-  levelSign.height = LEVEL_SIGN_WIDTH - 100;                         // control const height and width in init file of level up image  ***
+  levelSign.height = LEVEL_SIGN_WIDTH  ;                         // control const height and width in init file of level up image  ***
   levelSign.width = LEVEL_SIGN_WIDTH;                          // control const height and width in init file of level up image  ***
   levelSign.style.position = "absolute";
-  levelSign.style.left = window.innerWidth / 2 - (levelSign.width / 2) + "px";         // window.innerWidth / 2 - (levelSign.width /2 )**** + "px";           
-  levelSign.style.top = window.innerHeight / 2 - containerBoundingRect.top - (levelSign.height / 2) + "px";    // window.innerHeight / 2 - containerBoundingRect.top - (levelSign.height/2)**** + "px";
-  
+  levelSign.style.left = 70 + "%";         // window.innerWidth / 2 - (levelSign.width /2 )**** + "px";           
+  levelSign.style.top = 10 + "%";    // window.innerHeight / 2 - containerBoundingRect.top - (levelSign.height/2)**** + "px";
+  // levelSign.style.border = "1px solid red" ;
 
   container.appendChild(levelSign);
 

@@ -1,20 +1,4 @@
 
-// import * as initModule from "./init.js" ;
-// import * as EnemyFishModule from "EnemyFish.js" ;
-// import * as specialFishModule from "specialFish.js" ;
-// import * as SoundModule from "Sound.js" ;
-// import * as boardModule from"board.js" ;
-// import * as EnemyFishesCreationAndMovementModule from"EnemyFishesCreationAndMovement.js" ;
-// import * as scoreAndLevelModule from "scoreAndLevel.js" ;
-// import * as CollisionDetectionModule from "CollisionDetection.js" ;
-// import * as UpAndDownDivsModule from "UpAndDownDivs.js" ;
-// import * as timerModule from "timer.js" ;
-// import * as randomMotionModule from "randomMotion.js" ;
-// import * as seaStarModule from "seaStar.js" ;
-// import * as localStorageFunctionsModule from "localStorageFunctions.js" ;
-// import * as finalBadgesModule from "finalBadges.js";
-
-
 let gamePlay;
 let exitFlag = false;
 let escapeFlag = false;
@@ -54,41 +38,6 @@ container.onmousemove = (event) => {
 
 };
 
-// document.onkeydown = (event) =>  {
- 
-//     if (event.keyCode === 27){
-//         if (!confirm("exit Playing ?"))
-//             location.reload();
-//         else{
-//             displayGameOver();
-//             GOSound.play();  // sound 
-//             fishPlayer.style.display = "none";
-//             board.style.display = "none";
-//             clearInterval(interval);
-//             clearInterval(t);
-//             checkForFinalBadges();
-//             updateLocalStorage();
-//             updateCurrentPlayerBadges();
-//             localStorage.removeItem(playerNa.value);  // use this mod for now ****#
-//             exit();
-//         }
-        
-        
-//     }
-
-//     if (event.key === ' ' || event.key === 'Spacebar')
-//         event.preventDefault();
-
-// };
-
-
-// btnName.onclick = () => {
- 
-//     if (playerNa.value != "") {
-        
-//         nameEnt.classList.add("fadeOutUp");
-//     }
-// };
 
 let UpdateGameGrid =  () => {
 
@@ -114,6 +63,7 @@ let UpdateGameGrid =  () => {
 pauseModal.querySelector("#resumeAll").addEventListener("click", function () {         //**/ */
     pauseModal.style.display = "none";
     board.style.display = "flex";
+    fishPlayer.style.display = "block" ;
     escapeFlag = false;
     container.onmousemove = (event) => {
 
@@ -145,6 +95,7 @@ pauseModal.querySelector("#resumeAll").addEventListener("click", function () {  
 let startGame = () => {
     ///
     board.style.display = "none" ;
+    fishPlayer.style.display = "none" ; 
     pauseModal.style.display = "block";     //** */
 
     escapeFlag = true;                      /** */
@@ -192,7 +143,7 @@ let startGame = () => {
     currentPlayerTempBadge=[false,false,false];
     fishEnemiesList = [];
     fishPlayer.src = "./images/Characters/player" + playerNumber + "-right.gif";
-    // backgroundWebm.src = "videos/background.webm";
+    backgroundWebm.src = "videos/background.webm";
     backgroundVideo.load();
     removeBadgesFromDashBoard();
     showLevelUpNotificationImage();
@@ -240,7 +191,9 @@ let CheckEndOfGame = ()=> {
 
 
 let exit = function () {
+   
     location.reload();
+    localStorage.removeItem(playerNa.value);  // use this mod for now ****#
 };
 
 
@@ -250,7 +203,7 @@ let BoardMenuBtnAction = function(){
     if(pauseModal.style.display == "block"){
         pauseModal.style.display = "none";
         board.style.display = "flex";
-        // console.log("flex") ;
+        fishPlayer.style.display = "block" ;
         escapeFlag = false;
         container.onmousemove = (event) => {
 
@@ -292,7 +245,7 @@ let pauseAction = function(){
     pauseModal.querySelector("#resumeAll").addEventListener("click", function () {
         pauseModal.style.display = "none";
         board.style.display = "flex";
-        // console.log("flex2") ;
+        fishPlayer.style.display = "block" ;
         escapeFlag = false;
         container.onmousemove = (event) => {
 
@@ -326,4 +279,9 @@ let pauseAction = function(){
 
 
 
-// backgroundSound = setInterval(playUnderWaterSound, 6500);
+backgroundSound = setInterval(playUnderWaterSound, 6500 * 2 );
+window.addEventListener('beforeunload', function (e) {
+
+    localStorage.removeItem(playerNa.value);  // use this mod for now ****#
+    
+});
