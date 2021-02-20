@@ -27,9 +27,9 @@ Click on Logo to Start Play :
 - Try to finish all levels as fast as possible to get our speed badges for every level.
 
 # Tecnology Used
-* HTML
-* CSS
-* JavaScript
+* HTML 5
+* CSS 3
+* JavaScript ES6
 
 # Team    
 1) [Abdelrhman Montaser](https://www.linkedin.com/in/abdelrahman-montaser/)
