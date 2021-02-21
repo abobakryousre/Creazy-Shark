@@ -15,7 +15,7 @@ This is a feeding Fish Game
 * [Team members](#team-members)
 
 # Play
-Click on Logo to Start Play :
+Click on Logo to Play Online :
 [![Logo](./Div/Welcome/logo3.png)](https://crazy-shark.herokuapp.com/)
 
 
@@ -25,11 +25,12 @@ Click on Logo to Start Play :
 - Collect a lot of sea stars because your lives will increase for each number of sea stars.
 - Eat the golden fish at the middle of each level to make all big fishes smaller than you.
 - Try to finish all levels as fast as possible to get our speed badges for every level.
+- Keep your lives high to get the higest number of lives score. 
 
 # Tecnology Used
-* HTML
-* CSS
-* JavaScript
+* HTML5
+* CSS3
+* JavaScript(ES6)
 
 # Team    
 1) [Abdelrhman Montaser](https://www.linkedin.com/in/abdelrahman-montaser/)
