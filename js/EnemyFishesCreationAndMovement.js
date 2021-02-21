@@ -1,5 +1,9 @@
 let createEnemyFishes =  () => {
+<<<<<<< HEAD
 
+=======
+    let NUM_FISH_ENEMIES = Math.floor( level * 3 + LEVEL_SPEED +( 1 + ( 3 * LEVEL_SPEED ) )  ) ; 
+>>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
     foodTimer++;
     if (foodTimer > 100/(level* (NUM_FISH_ENEMIES/10) ) && fishEnemiesList.length <= NUM_FISH_ENEMIES) {
 

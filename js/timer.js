@@ -20,6 +20,7 @@ let timer = function () {
   minutesNum.textContent = minutes;
   secondNum.textContent = second;
 
+<<<<<<< HEAD
   // time = hours + " : " + minutes + " : " + second;
 
   /*timeDiv.innerHTML = (hours ? (hours>9?hours : "0"+hours) : "00" )+
@@ -64,3 +65,8 @@ let timer = function () {
 };
 
 // timer()
+=======
+  
+};
+
+>>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421

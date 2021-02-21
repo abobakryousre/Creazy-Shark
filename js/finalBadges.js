@@ -1,5 +1,8 @@
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 let updateCurrentPlayerBadges = () => {
 
 
@@ -25,6 +28,7 @@ let updateCurrentPlayerBadges = () => {
          finalBadgesArr[i].style.display = "none";
    }
 
+<<<<<<< HEAD
 
    // console.log(finalBadges);
 
@@ -34,4 +38,6 @@ let updateCurrentPlayerBadges = () => {
 
 
 
+=======
+>>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 }

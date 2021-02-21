@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 // import * as initModule from "./init.js" ;
 // import * as EnemyFishModule from "EnemyFish.js" ;
 // import * as specialFishModule from "specialFish.js" ;
@@ -18,6 +19,11 @@
 let gamePlay;
 let exitFlag = false;
 let escape = false;
+=======
+let gamePlay;
+let exitFlag = false;
+let escapeFlag = false;
+>>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 let pauseModal = document.getElementById('pauseModal');
 const keyboard = {
     right: false,
@@ -54,6 +60,7 @@ container.onmousemove = (event) => {
 
 };
 
+<<<<<<< HEAD
 // document.onkeydown = (event) =>  {
  
 //     if (event.keyCode === 27){
@@ -89,11 +96,17 @@ container.onmousemove = (event) => {
 //         nameEnt.classList.add("fadeOutUp");
 //     }
 // };
+=======
+>>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 
 let UpdateGameGrid =  () => {
 
     CheckEndOfGame();
+<<<<<<< HEAD
     if( (! gameCompleteFlag) && (! escape)){
+=======
+    if( (! gameCompleteFlag) && (! escapeFlag)){
+>>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
         CheckGameOver();
         adjustBoard(score, level, playerNumber, lives, seaStarNum);
         createEnemyFishes();
@@ -109,12 +122,57 @@ let UpdateGameGrid =  () => {
 
 };
 
+<<<<<<< HEAD
 let startGame = () => {
     ///
+=======
+
+
+pauseModal.querySelector("#resumeAll").addEventListener("click", function () {         //**/ */
+    pauseModal.style.display = "none";
+    board.style.display = "flex";
+    fishPlayer.style.display = "block" ;
+    escapeFlag = false;
+    container.onmousemove = (event) => {
+
+        containerBoundingRect = container.getBoundingClientRect();
+        
+        if (parseInt(fishPlayer.style.left) < event.clientX - containerBoundingRect.left) {
+            fishPlayer.src = "./images/Characters/player" + playerNumber + "-right.gif"; // change right
+        } else if (parseInt(fishPlayer.style.left) > event.clientX - containerBoundingRect.left) {
+            fishPlayer.src = "./images/Characters/player" + playerNumber + "-left.gif"; // change left
+        }
+    
+        fishPlayer.style.left = (event.clientX - containerBoundingRect.left) + 'px';
+        fishPlayer.style.top = (event.clientY - containerBoundingRect.top) + 'px';
+    
+    
+        if (event.clientX >= window.innerWidth - fishPlayer.width) {
+    
+            fishPlayer.style.left = window.innerWidth - fishPlayer.width + 'px';
+        }
+    
+        if (event.clientY >= window.innerHeight - fishPlayer.height) {
+    
+            fishPlayer.style.top = window.innerHeight - containerBoundingRect.top - fishPlayer.height + 'px';
+        }
+    
+    };
+});
+/*** */
+let startGame = () => {
+    ///
+    board.style.display = "none" ;
+    fishPlayer.style.display = "none" ; 
+    pauseModal.style.display = "block";     //** */
+
+    escapeFlag = true;                      /** */
+>>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
     if ( document.onkeydown === null ){
         document.onkeydown = (event) =>  {
 
             if (event.keyCode === 27){
+<<<<<<< HEAD
                 
                 escape = true;
                 if(pauseModal.style.display == "block"){
@@ -184,11 +242,22 @@ let startGame = () => {
                 
                 };
             });
+=======
+                BoardMenuBtnAction();
+            }
+        
+            pauseAction();
+>>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
         
             keyboard.esc = false;
         };
     }
     // end menu
+<<<<<<< HEAD
+=======
+
+    
+>>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
     if (localStorage.getObj(playerNa.value) === null)
         localStorage.setObj(playerNa.value, { scoreing: 0, level1time: 4000, level2time: 4000, level3time: 4000, numberOfLives: 0 });
 
@@ -218,7 +287,11 @@ let startGame = () => {
     currentPlayerTempBadge=[false,false,false];
     fishEnemiesList = [];
     fishPlayer.src = "./images/Characters/player" + playerNumber + "-right.gif";
+<<<<<<< HEAD
     // backgroundWebm.src = "videos/background.webm";
+=======
+    backgroundWebm.src = "videos/background.webm";
+>>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
     backgroundVideo.load();
     removeBadgesFromDashBoard();
     showLevelUpNotificationImage();
@@ -266,8 +339,105 @@ let CheckEndOfGame = ()=> {
 
 
 let exit = function () {
+<<<<<<< HEAD
     location.reload();
 };
 
 // backgroundSound = setInterval(playUnderWaterSound, 6500);
 
+=======
+   
+    location.reload();
+    localStorage.removeItem(playerNa.value);  // use this mod for now ****#
+};
+
+
+
+let BoardMenuBtnAction = function(){
+    escapeFlag = false;
+    if(pauseModal.style.display == "block"){
+        pauseModal.style.display = "none";
+        board.style.display = "flex";
+        fishPlayer.style.display = "block" ;
+        escapeFlag = false;
+        container.onmousemove = (event) => {
+
+            containerBoundingRect = container.getBoundingClientRect();
+            
+            if (parseInt(fishPlayer.style.left) < event.clientX - containerBoundingRect.left) {
+                fishPlayer.src = "./images/Characters/player" + playerNumber + "-right.gif"; // change right
+            } else if (parseInt(fishPlayer.style.left) > event.clientX - containerBoundingRect.left) {
+                fishPlayer.src = "./images/Characters/player" + playerNumber + "-left.gif"; // change left
+            }
+        
+            fishPlayer.style.left = (event.clientX - containerBoundingRect.left) + 'px';
+            fishPlayer.style.top = (event.clientY - containerBoundingRect.top) + 'px';
+        
+        
+            if (event.clientX >= window.innerWidth - fishPlayer.width) {
+        
+                fishPlayer.style.left = window.innerWidth - fishPlayer.width + 'px';
+            }
+        
+            if (event.clientY >= window.innerHeight - fishPlayer.height) {
+        
+                fishPlayer.style.top = window.innerHeight - containerBoundingRect.top - fishPlayer.height + 'px';
+            }
+        
+        };
+    }
+    else{
+        pauseModal.style.display = "block";
+        escapeFlag = true;
+        container.onmousemove = null ;
+    }
+
+    keyboard.esc = false;
+}
+
+
+let pauseAction = function(){
+    pauseModal.querySelector("#resumeAll").addEventListener("click", function () {
+        pauseModal.style.display = "none";
+        board.style.display = "flex";
+        fishPlayer.style.display = "block" ;
+        escapeFlag = false;
+        container.onmousemove = (event) => {
+
+            containerBoundingRect = container.getBoundingClientRect();
+            
+            if (parseInt(fishPlayer.style.left) < event.clientX - containerBoundingRect.left) {
+                fishPlayer.src = "./images/Characters/player" + playerNumber + "-right.gif"; // change right
+            } else if (parseInt(fishPlayer.style.left) > event.clientX - containerBoundingRect.left) {
+                fishPlayer.src = "./images/Characters/player" + playerNumber + "-left.gif"; // change left
+            }
+        
+            fishPlayer.style.left = (event.clientX - containerBoundingRect.left) + 'px';
+            fishPlayer.style.top = (event.clientY - containerBoundingRect.top) + 'px';
+        
+        
+            if (event.clientX >= window.innerWidth - fishPlayer.width) {
+        
+                fishPlayer.style.left = window.innerWidth - fishPlayer.width + 'px';
+            }
+        
+            if (event.clientY >= window.innerHeight - fishPlayer.height) {
+        
+                fishPlayer.style.top = window.innerHeight - containerBoundingRect.top - fishPlayer.height + 'px';
+            }
+        
+        };
+    });
+}
+
+
+
+
+
+backgroundSound = setInterval(playUnderWaterSound, 6500 * 2 );
+window.addEventListener('beforeunload', function (e) {
+
+    localStorage.removeItem(playerNa.value);  // use this mod for now ****#
+    
+});
+>>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421

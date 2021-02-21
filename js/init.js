@@ -1,12 +1,19 @@
 
+<<<<<<< HEAD
 // export * as src from "./init.js" ;
 
+=======
+>>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 // DOM ELEMENTS
 let fishPlayer = document.getElementById("fishPlayer");         // player's fish image  
 let container = document.getElementById("container");           // game space 
 let board = document.getElementById("board");                   // board status above game space 
 
 // audio elements of the Game Displayed : none (default)
+<<<<<<< HEAD
+=======
+let blobSound = document.getElementById("blob");
+>>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 let eatSound = document.getElementById("eat");
 let dyingSound = document.getElementById("die");
 let levelUpSound = document.getElementById("level");
@@ -40,9 +47,13 @@ let levelDiv = document.getElementById('levelDiv');
 let seaStarObj = document.getElementById('seaStar');
 let seaStarImgNum = document.getElementById('seaStarNum');
 let timeDiv = document.getElementById('timer');
+<<<<<<< HEAD
 // let secondNumArr = document.getElementsByClassName('secondNum');
 // let minNumArr = document.getElementsByClassName('minNum');
 // let hourNumArr = document.getElementsByClassName('hourNum');
+=======
+
+>>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 let backgroundVideo = document.getElementById("backgroundVideo");
 let backgroundWebm = document.getElementById("backgroundWebm");
 let containerBoundingRect = container.getBoundingClientRect();
@@ -50,9 +61,12 @@ let containerBoundingRect = container.getBoundingClientRect();
 let specialFish;                                                // just declaring special fish variable 
 let badgrArr = document.getElementsByClassName('bad');
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 let finalBadgesArr=document.getElementsByClassName("finalBadges");
 /////////////////////////////////////////////
 
@@ -67,10 +81,13 @@ let foodTimer = 0;
 const INIT_FISH_WIDTH = 100 ;                       // fish size   level= size * speed * num * 1/ time * 1/seastar * 1/special fish
 const INIT_FISH_HEIGHT = INIT_FISH_WIDTH - 40 ;
 
+<<<<<<< HEAD
 let LEVEL_SPEED = 0 ;                                // enemy fish speed 0 default
 const NUM_FISH_ENEMIES = 12 * level *  level *  level * (1+ LEVEL_SPEED * 100) ;                           // num of fish enemies 9 default
 const SEA_STAR_GIFT_NUM = 4 + LEVEL_SPEED ;
 let seaStarTimerMax = Math.floor(Math.random() * 501) + (100 + 400* LEVEL_SPEED);
+=======
+>>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 
 const LEVEL0_WEIGHT = 0.8  ;
 const LEVEL1_WEIGHT = 1.1  ;    
@@ -82,6 +99,10 @@ const BADGE_WIDTH = 180 ;
 
 fishPlayer.style.width = INIT_FISH_WIDTH ;
 fishPlayer.style.height = INIT_FISH_HEIGHT ;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 /// end of const
 
 let currentPlayerLevel1Time = null;
@@ -137,4 +158,14 @@ let globalTimeInSeconds=0;
 let currentPlayerTempBadge=[false,false,false];
 
 
+<<<<<<< HEAD
 
+=======
+let BoardMenuBtn = document.getElementById("Board-menuBtn") ; 
+let seaStarSpan = document.getElementById("seaStarValue");
+
+
+let mutedSvg = document.getElementById("muted");
+let unMutedSvg = document.getElementById("unmuted");
+unMutedSvg.style.display = 'none' ;
+>>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
