@@ -55,11 +55,7 @@ let congUp = () => {
     congDiv.classList.remove("bounceInDown");
     congDiv.classList.add("bounceOutUp");
     fishPlayer.style.display = "block";
-<<<<<<< HEAD
-    board.style.display = "block";
-=======
     board.style.display = "flex";
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
     setTimeout( () => {
         congDiv.style.display = "none";
         congDiv.style.zIndex = 0;

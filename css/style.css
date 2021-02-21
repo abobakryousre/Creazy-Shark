@@ -1,16 +1,4 @@
-<<<<<<< HEAD
 html, body {width:100%;height:100%;margin:0;padding: 0px;overflow:hidden ; font-family: sans-serif; }
-=======
-html,
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0px;
-  overflow: hidden;
-  font-family: sans-serif;
-}
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 
 #container {
   padding: 0px;
@@ -23,7 +11,6 @@ body {
 }
 
 video {
-<<<<<<< HEAD
     position: fixed;
     min-width: 100%;
     min-height: 100%;
@@ -35,267 +22,11 @@ video {
     transform: translateX(-50%) translateY(-50%);
     transition: 1s opacity;
 }
-/* 
-#board{
-   position:relative;
-   width:100%;
-   height:10%;
-   margin-left: 0% ;
-   margin-top: 1.5% ;
-}
-#scoreDiv {
-   position:absolute;
-   width:15%;
-   height:40%;
-   left:0%;
-   top:2%;
-}
-#scoreImg{
-  height:100%;
-  width:40%;
-  float:left;
-}
-#scoreNumDiv{
-  height:100%;
-  width:57%;
-  display: block;
-  float: right;
-}
-.scoreNum{
- height:100%;
- width:25%;
- float:left;
-}
-#growthDiv{
-  position:absolute;
-  width:30%;
-  height:40%;
-  display: inline-block;
-  left:16%;
-  top:2%;
-}
-#growthImg{
-    height:100%;
-    width:28%;
-    float: left;
-}
-#growthBarTotal{
-  height:100%;
-  width:70%;
-  display: block;
-  background-color:#333;
-  border-radius: 5px ;
-  float: right;
-  position: relative;
-}
-#growthBarActual{
-  height:100%;
-  border-radius: 5px ;
-  background-color:dodgerblue;
-  display:block;
-  float: left;
 
-}
-#progressNotch1{
-  height:100%;
-  width:1px;
-  background-color: SandyBrown;
-  left: 33.33%;
-  display: inline-block;
-  position: absolute;
-}
-
-#progressNotch2{
-  height:100%;
-  width:1px;
-  background-color: SandyBrown;
-  left:66.66%;
-  display: inline-block;
-  position: absolute;
-}
-
-#levelDiv{
-  position:absolute;
-  width:15%;
-  height:40%;
-  display: inline-block;
-  left:47%;
-  top:2%;
-}
-#levelImg{
-    height:100%;
-    width:60%;
-    float: left;
-}
- #levelNum{
-   height:100%;
-   width:15%;
-   float: right;
-   margin-right:22%;
- }
- #liveDiv{
-  position:absolute;
-  width:10%;
-  height:40%;
-  right:30%;
-  top:2%;
-}
-#charImg{
-  height:100%;
-  width:50%;
-  float: left;
-
-}
-#liveNumDiv{
-  height:100%;
-  width:50%;
-  display: block;
-  float: right;
-
-}
-.liveNum{
- height:100%;
- width:40%;
- float: left;
-}
-#menuDiv{
-  position:absolute;
-  width:30%;
-  height:40%;
-  left:16%;
-  top:44%
-}
-
-#menuImg{
-   height:100%;
-   width:28%;
-   float: left;
-}
-#menuCharDiv{
- height:100%;
- width:70%;
- display: block;
- float: right;
-}
-
-.menuChar{
-height:100%;
-width:20%;
-float:left;
-margin-left: 6.666%;
-margin-right: 6.666%;
-}
-
-#seaStar{
-position:absolute;
-top:0px;
-display: none;
-height:50px;
-width:50px;
-}
-
-#seaStarDiv{
- position:absolute;
- width:10%;
- height:40%;
- display: inline-block;
- left:0%;
- top:45%;
-}
-#seaStarImg{
-   height:100%;
-   width:30%;
-   float: left;
-}
-#seaStarNum{
-  height:100%;
-  width:20%;
-  float: right;
-  margin-right:46%;
-}
-
-#badgeDiv {
-   position:absolute;
-   width:29%;
-   height:100%;
-   right:0%;
-   top:2%;
-
-}
-#badgeImg{
-  height:100%;
-  width:20%;
-  float:left;
-}
-#playerBadgesDiv{
-  height:100%;
-  width:80%;
-  display: block;
-  float: right;
-}
-
-.bad{
- height:100%;
- width:19%;
- margin-left: 1%;
- float:right;
- border: solid 0.5px SandyBrown;
-} */
 
 /*********************** new **********************************/
 
 #mainBackground img{
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    z-index: 555;
-}
-
-#EnterNameSec{
-
-  text-align: center;
-  position: absolute;
-  width: 500px;
-  height: 250px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  box-shadow: 8px 8px 50px #000;  
-  z-index: 555 ; 
-}
-
-#EnterNameSec header{
-  width: 200px;
-  padding: 5px 0px;
-  margin: auto;
-  font-size: 30px;
-  border-bottom: 3px solid rgb(0, 0, 0);
-}
-
-#EnterNameSec #nameEnter{
-  width: 180px;
-  margin: 40px 0px;
-  font-size: 20px;
-}
-#btnGame{
-=======
-  position: fixed;
-  min-width: 100%;
-  min-height: 100%;
-  left: 50%;
-  top: 50%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  transform: translateX(-50%) translateY(-50%);
-  transition: 1s opacity;
-}
-
-
-/*********************** new **********************************/
-
-#mainBackground img {
   position: fixed;
   width: 100vw;
   height: 100%;
@@ -331,55 +62,33 @@ width:50px;
   font-size: 20px;
   /* place-content: center; */
 }
-#btnGame {
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
+#btnGame{
   border-radius: 500px;
   font-size: 20px;
   padding: 5px;
   margin: 20px;
-<<<<<<< HEAD
   color: black;    
 }
 
 #btnGame:hover{
   background: rgba(239, 239, 239, .1 );
-=======
-  color: black;
-}
-
-#btnGame:hover {
-  background: rgba(239, 239, 239, 0.1);
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
   transform: scale(1.5);
   border: none;
   color: white;
   transition: 0.3s;
 }
 /*************/
-<<<<<<< HEAD
 .welcome{
-=======
-.welcome {
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
   display: none;
   text-align: center;
   position: absolute;
   width: 500px;
-<<<<<<< HEAD
-  height: 500px;
-  
-=======
   height: 80%;
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   box-shadow: 8px 8px 50px #000;
-<<<<<<< HEAD
-  z-index: 555 ;
-}
-=======
   z-index: 555;
 }
 .welcome header{
@@ -392,7 +101,6 @@ width:50px;
   margin-left: 0%;
 }
 
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 .welcome button{
   display: inline-block;
   width: 100px;
@@ -401,30 +109,16 @@ width:50px;
   border-radius: 12px;
   color: black;
 }
-<<<<<<< HEAD
 .welcome button:hover{
   background: rgba(239, 239, 239, .1 );
-=======
-.welcome button:hover {
-  background: rgba(239, 239, 239, 0.1);
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
   transform: scale(1.5);
   border: none;
   color: white;
   transition: 0.3s;
 }
 
-<<<<<<< HEAD
 
 .how-to-play{
-  display: none;
-  text-align: center;
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  font-size: 20px;    
-=======
-.how-to-play {
   display: none;
   text-align: center;
   position: absolute;
@@ -432,49 +126,31 @@ width:50px;
   height: 600px;
   font-size: 20px;
   font-weight: bold;    
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   box-shadow: 8px 8px 50px #000;
-<<<<<<< HEAD
   z-index: 555 ; 
-}
-.how-to-play p{
-  margin: 20px 0px;
-  padding: 10px;
-}
-.how-to-play button{
-=======
-  z-index: 555;
 }
 .how-to-play p{
   margin: 40px 0px;
   padding: 10px;
 }
-.how-to-play button {
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
+.how-to-play button{
   border-radius: 12px;
   font-size: 20px;
   color: black;
 }
 
-<<<<<<< HEAD
 .how-to-play button:hover{
   background: rgba(239, 239, 239, .1 );
-=======
-.how-to-play button:hover {
-  background: rgba(239, 239, 239, 0.1);
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
   transform: scale(1.5);
   border: none;
   color: white;
   transition: 0.3s;
 }
 
-<<<<<<< HEAD
-=======
 #how-to-play-header{
   margin-top: 7%;
   color: rebeccapurple;
@@ -482,31 +158,20 @@ width:50px;
   font-size: xx-large;
   font-family: emoji;
 }
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 .about{
   display: none;
   text-align: center;
   position: absolute;
-<<<<<<< HEAD
-  width: 600px;
-  height: 600px;
-  font-size: 20px;    
-=======
   width: 500px;
   height: 500px;
   font-size: 20px;    
   font-weight: bold;
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   box-shadow: 8px 8px 50px #000;
-<<<<<<< HEAD
   z-index: 555 ; 
-}
-=======
-  z-index: 555;
 }
 .about ul{
   margin:50px 0px;
@@ -555,7 +220,6 @@ width:50px;
   font-family: monospace;
 }
 
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 .about button{
   border-radius: 12px;
   font-size: 20px;
@@ -563,24 +227,15 @@ width:50px;
   padding: 5px;
 }
 
-<<<<<<< HEAD
 .about button:hover{
   background: rgba(239, 239, 239, .1 );
-=======
-.about button:hover {
-  background: rgba(239, 239, 239, 0.1);
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
   transform: scale(1.5);
   border: none;
   color: white;
   transition: 0.3s;
 }
 
-<<<<<<< HEAD
 .characters{
-=======
-.characters {
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
   display: none;
   text-align: center;
   position: absolute;
@@ -591,54 +246,34 @@ width:50px;
   transform: translate(-50%, -50%);
   color: white;
   box-shadow: 8px 8px 50px #000;
-<<<<<<< HEAD
   z-index: 555 ; 
 }
 .characters button{
-=======
-  z-index: 555;
-}
-.characters button {
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
   border-radius: 12px;
   font-size: 20px;
   color: black;
   margin: 0px 100px;
 }
 
-<<<<<<< HEAD
 .characters button:hover{
   background: rgba(239, 239, 239, .1 );
-=======
-.characters button:hover {
-  background: rgba(239, 239, 239, 0.1);
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
   transform: scale(1.5);
   border: none;
   color: white;
   transition: 0.3s;
 }
-<<<<<<< HEAD
 .characters img{
-=======
-.characters img {
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
   margin: 50px 30px 50px 50px;
   width: 150px;
   height: 150px;
   cursor: pointer;
   border-radius: 100px;
 }
-<<<<<<< HEAD
 #levels div  p{
-=======
-#levels div p {
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
   text-align: center;
   font-size: 20px;
   padding: 50px 10px;
 }
-<<<<<<< HEAD
 #levels div p:hover{
   transform: scale(1.5);
 }
@@ -648,46 +283,20 @@ width:50px;
 }
    
 #levels{
-=======
-#levels div p:hover {
-  transform: scale(1.5);
-}
-.characters p {
-  margin: 50px 100px;
-  font-size: 30px;
-}
-
-#levels {
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
   display: none;
   text-align: center;
   position: absolute;
   width: 500px;
-<<<<<<< HEAD
-  height: 600px;
-  
-=======
   height: 650px;
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   box-shadow: 8px 8px 50px #000;
-<<<<<<< HEAD
-  z-index: 555 ;
-   
-  animation-delay: 0.5s ;
-  animation-duration: 2s;
-
-=======
   z-index: 555;
   animation-delay: 0.5s;
   animation-duration: 2s;
 
-  animation-delay: 0.5s;
-  animation-duration: 2s;
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 }
 
 #levels div {
@@ -701,17 +310,12 @@ width:50px;
   margin: 40px 200px;
 }
 
-<<<<<<< HEAD
 #levels div  p{
-=======
-#levels div p {
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
   text-align: center;
   font-size: 20px;
   padding: 40px 10px;
 }
 
-<<<<<<< HEAD
 #levels button{
   border-radius: 12px;
   font-size: 20px;
@@ -720,227 +324,15 @@ width:50px;
 }
 #levels button:hover{
   background: rgba(239, 239, 239, .1 );
-=======
-#levels button {
-  border-radius: 12px;
-  font-size: 20px;
-  margin: 0px 0px 0px 30px;
-  color: black;
-}
-#levels button:hover {
-  background: rgba(239, 239, 239, 0.1);
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
   transform: scale(1.5);
   border: none;
   color: white;
   transition: 0.3s;
 }
 
-<<<<<<< HEAD
 
 /**** board ****/
 
-
-/* #board{
-   position:relative;
-   width:100%;
-   height:10%;
-   margin-left: 0% ;
-   margin-top: 1.5% ;
-}
-#scoreDiv {
-   position:absolute;
-   width:15%;
-   height:40%;
-   left:0%;
-   top:2%;
-}
-#scoreImg{
-  height:100%;
-  width:40%;
-  float:left;
-}
-#scoreNumDiv{
-  height:100%;
-  width:57%;
-  display: block;
-  float: right;
-}
-.scoreNum{
- height:100%;
- width:25%;
- float:left;
-}
-#growthDiv{
-  position:absolute;
-  width:30%;
-  height:40%;
-  display: inline-block;
-  left:16%;
-  top:2%;
-}
-#growthImg{
-    height:100%;
-    width:28%;
-    float: left;
-}
-#growthBarTotal{
-  height:100%;
-  width:70%;
-  display: block;
-  background-color:#333;
-  border-radius: 5px ;
-  float: right;
-  position: relative;
-}
-#growthBarActual{
-  height:100%;
-  border-radius: 5px ;
-  background-color:dodgerblue;
-  display:block;
-  float: left;
-
-}
-#progressNotch1{
-  height:100%;
-  width:1px;
-  background-color: SandyBrown;
-  left: 33.33%;
-  display: inline-block;
-  position: absolute;
-}
-
-#progressNotch2{
-  height:100%;
-  width:1px;
-  background-color: SandyBrown;
-  left:66.66%;
-  display: inline-block;
-  position: absolute;
-}
-
-#levelDiv{
-  position:absolute;
-  width:15%;
-  height:40%;
-  display: inline-block;
-  left:47%;
-  top:2%;
-}
-#levelImg{
-    height:100%;
-    width:60%;
-    float: left;
-}
- #levelNum{
-   height:100%;
-   width:15%;
-   float: right;
-   margin-right:22%;
- }
- #liveDiv{
-  position:absolute;
-  width:10%;
-  height:40%;
-  right:30%;
-  top:2%;
-}
-#charImg{
-  height:100%;
-  width:50%;
-  float: left;
-
-}
-#liveNumDiv{
-  height:100%;
-  width:50%;
-  display: block;
-  float: right;
-
-}
-.liveNum{
- height:100%;
- width:40%;
- float: left;
-}
-#menuDiv{
-  position:absolute;
-  width:30%;
-  height:40%;
-  left:16%;
-  top:44%
-}
-
-#menuImg{
-   height:100%;
-   width:28%;
-   float: left;
-}
-#menuCharDiv{
- height:100%;
- width:70%;
- display: block;
- float: right;
-}
-
-.menuChar{
-height:100%;
-width:20%;
-float:left;
-margin-left: 6.666%;
-margin-right: 6.666%;
-} */
-
-
-/*
-#seaStarDiv{
- position:absolute;
- width:10%;
- height:40%;
- display: inline-block;
- left:0%;
- top:45%;
-}
-#seaStarImg{
-   height:100%;
-   width:30%;
-   float: left;
-}
-#seaStarNum{
-  height:100%;
-  width:20%;
-  float: right;
-  margin-right:46%;
-}
-
-#badgeDiv {
-   position:absolute;
-   width:29%;
-   height:100%;
-   right:0%;
-   top:2%;
-
-}
-#badgeImg{
-  height:100%;
-  width:20%;
-  float:left;
-}
-#playerBadgesDiv{
-  height:100%;
-  width:80%;
-  display: block;
-  float: right;
-} */
-
-.bad{
- height:100%;
- width:19%;
- margin-left: 1%;
- float:right;
- border: solid 0.5px SandyBrown;
-=======
-/**** board ****/
 
 #seaStarDiv{
   text-align: center;
@@ -955,7 +347,6 @@ margin-right: 6.666%;
   width: 100%;
   float: right;
   border: solid 0.5px SandyBrown;
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 }
 
 #board {
@@ -964,11 +355,6 @@ margin-right: 6.666%;
   position: fixed;
   top: 0;
   left: 0;
-<<<<<<< HEAD
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0 0px;
-=======
   align-items: baseline;
   justify-content: flex-start;
   padding: 0 0px;
@@ -984,7 +370,6 @@ margin-right: 6.666%;
 #timer > span {
   font-weight: bolder;
   color: #fff;
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 }
 
 #board > div {
@@ -996,14 +381,11 @@ margin-right: 6.666%;
   align-items: center;
 }
 
-<<<<<<< HEAD
-=======
 #growthDiv span{
   padding-right: 15px;
   font-weight: bolder;
 }
 
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 #growthDiv .bar {
   width: 400px;
   border: 1px solid #ddd;
@@ -1060,10 +442,7 @@ margin-right: 6.666%;
   width: 50px;
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 /**** end board ***/ 
 
 
@@ -1082,21 +461,12 @@ margin-right: 6.666%;
   /* background-color: rgba(0, 0, 0, 0.4); */
 }
 
-<<<<<<< HEAD
 
-.pauseModal .modal-content {
-  background-image: url(../images/BG.png);
-  background-color: #fefefe;
-  margin: 10% auto;
-  padding: 20px;
-  border: 1px solid #888;
-=======
 .pauseModal .modal-content {
   background-color: transparent;
   margin: 10% auto;
   padding: 20px;
   border: 2px solid #0554af;
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
   border-radius: 40px;
   position: absolute;
   width: 25%;
@@ -1104,22 +474,14 @@ margin-right: 6.666%;
 }
 
 .closeModal {
-<<<<<<< HEAD
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-=======
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 }
 
 .closeModal:hover,
 .closeModal:focus {
-<<<<<<< HEAD
     color: black;
     text-decoration: none;
     cursor: pointer;
@@ -1127,32 +489,16 @@ margin-right: 6.666%;
 
 .modal-content {
     text-align: center;
-=======
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.modal-content {
-  text-align: center;
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 }
 
 .btn {
   min-width: 100px;
   height: 50px;
   border-radius: 30px;
-<<<<<<< HEAD
-  border: 1px solid #ccc;
-  color: #315bff;
-  outline: none;
-  font-size: 20px;
-=======
   border: 2px solid #053c6e;
   color: #053c6e;
   /* outline: none; */
   font-size: x-large;
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 }
 
 .btn:hover,
@@ -1166,14 +512,6 @@ margin-right: 6.666%;
 }
 
 
-<<<<<<< HEAD
-#CongDiv
-{
-  display: block;
-  z-index: 2000;
-}
-
-=======
 #muted{
   margin-right: 0%;
 }
@@ -1188,15 +526,9 @@ margin-right: 6.666%;
 }
 
 
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 #playerBadgesDiv{
   height: 40%;
   width: 100%;
   position: absolute;
   margin-top: 4%;
-<<<<<<< HEAD
 }
-
-=======
-}
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421

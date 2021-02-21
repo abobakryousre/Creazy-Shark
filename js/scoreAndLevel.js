@@ -1,12 +1,7 @@
-<<<<<<< HEAD
-let scoreAndLevel =  () => {
-
-=======
 let SEA_STAR_GIFT_NUM = 5 ;
 let scoreAndLevel =  () => {
   SEA_STAR_GIFT_NUM = 2 + LEVEL_SPEED + level ;
   
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
   if (seaStarNum === SEA_STAR_GIFT_NUM ) {         // for every 5 star earn 1 life 
     lives++;
     seaStarNum = 0;
@@ -74,21 +69,12 @@ let showLevelUpNotificationImage = () => {
   let levelSign = document.createElement("img");
 
   levelSign.src = "./images/Levels/level" + level + ".png";
-<<<<<<< HEAD
-  levelSign.height = LEVEL_SIGN_WIDTH - 100;                         // control const height and width in init file of level up image  ***
-  levelSign.width = LEVEL_SIGN_WIDTH;                          // control const height and width in init file of level up image  ***
-  levelSign.style.position = "absolute";
-  levelSign.style.left = window.innerWidth / 2 - (levelSign.width / 2) + "px";         // window.innerWidth / 2 - (levelSign.width /2 )**** + "px";           
-  levelSign.style.top = window.innerHeight / 2 - containerBoundingRect.top - (levelSign.height / 2) + "px";    // window.innerHeight / 2 - containerBoundingRect.top - (levelSign.height/2)**** + "px";
-  
-=======
   levelSign.height = LEVEL_SIGN_WIDTH  ;                         // control const height and width in init file of level up image  ***
   levelSign.width = LEVEL_SIGN_WIDTH;                          // control const height and width in init file of level up image  ***
   levelSign.style.position = "absolute";
   levelSign.style.left = 70 + "%";         // window.innerWidth / 2 - (levelSign.width /2 )**** + "px";           
   levelSign.style.top = 10 + "%";    // window.innerHeight / 2 - containerBoundingRect.top - (levelSign.height/2)**** + "px";
   // levelSign.style.border = "1px solid red" ;
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 
   container.appendChild(levelSign);
 

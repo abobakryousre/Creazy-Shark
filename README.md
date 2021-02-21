@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-# JavaScriptGame
->>>>>>> 845f93c186397116b9d93fcc6834e62d618057da
-=======
 ![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)
 ![forthebadge](https://forthebadge.com/images/badges/uses-brains.svg)
 ![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)
@@ -34,13 +27,12 @@ Click on Logo to Start Play :
 - Try to finish all levels as fast as possible to get our speed badges for every level.
 
 # Tecnology Used
-* HTML 5
-* CSS 3
-* JavaScript ES6
+* HTML
+* CSS
+* JavaScript
 
 # Team    
 1) [Abdelrhman Montaser](https://www.linkedin.com/in/abdelrahman-montaser/)
 2) [Ahmed Mammdoh Abdel Wahab](https://www.linkedin.com/in/ahmedmamdouh94/)
 3) [Abobakr Yousre](https://www.linkedin.com/in/abobakryousre/)
 4) [Hosam Mohamed Ali](https://www.linkedin.com/in/hossam-ali-940/)
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421

@@ -12,81 +12,11 @@ button:hover {
     top: 0 ;
    /* background: url("../Div/Welcome/bg.PNG") fixed no-repeat ;
     background-size: cover ; */
-<<<<<<< HEAD
     background: #333 ;
-=======
-    background: rgb(61, 61, 61) ;
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
     color: #fff ;
     z-index: 888;
     height: 100%;
     width: 100% ;
-<<<<<<< HEAD
-    animation-delay: 1s ;
-    animation-duration: 3s;
-  }
-
-  #loader {
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid #3498db; /* Blue */
-    border-radius: 50%;
-    width: 10vw;
-    height: 10vw;
-    animation: spin 2s linear infinite;
-    margin-left: 45vw;
-  }
-
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-
-/* #EnterNameSec{
-
-  position: fixed;
-    top: 0 ;
-    background: url("../Div/Welcome/background.jpg") fixed no-repeat ;
-    background-size: cover ;
-    color: #fff ;
-    z-index: 777;
-    height: 100%;
-    width: 100% ;
-    animation-delay: 1s ;
-    animation-duration: 3s;
-} */
-
-/* input.form-control , input.form-control:focus{
-  width: 30% ;
-  margin: 5% ;
-  margin-left: 35%;
-  background: transparent;
-  height: 8%;
-  border: 2px solid #fff;
-  color: #fff ;
-  border-radius: 10px ;
-  font-size: 20px ;
-}
-
-input.form-control::placeholder{
-  color: #fff ;
-  font-size: 20px  ;
-} */
-
-
-/* #select{
-    position: fixed;
-    top: 0 ;
-    background: url("../Div/Welcome/bg.PNG") fixed round;
-    background-size: cover ;
-    color: #fff ;
-    z-index: 666;
-    height: 100%;
-    width: 100%;
-    width:100%;
-    animation-delay: 0.5s ;
-    animation-duration: 2s;
-} */
-=======
     animation-delay: 4s ;
     animation-duration: 6s;
   }
@@ -177,7 +107,6 @@ input.form-control::placeholder{
     }
   }
 
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 .transperant-btn{
     background: transparent ;
     border: 0px;
@@ -219,10 +148,7 @@ perspective: 1000px;
 #currentPlayerBadges{
 height:100%;
 width: 100% ;
-<<<<<<< HEAD
-=======
 padding-top: 6% ;
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 display: none;
 position: absolute;
 z-index: 9991;
@@ -230,15 +156,10 @@ top:0 ;
 left: 0 ;
 background: url("../Div/Welcome/sea-background.jpg") fixed round ;
 background-size: cover;
-<<<<<<< HEAD
-}
-
-=======
 padding: 20px ;
 }
 
 
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 #backBtn{
 margin: 10% ;
 background: transparent ;
@@ -274,21 +195,6 @@ img.finalBadges{
   width: 20%;
   height: 20%;
 }
-<<<<<<< HEAD
-
-#currentPlayerBadges button {
-  margin: 20px auto;
-  width: auto;
-  height: 20%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  outline: 0;
-}
-
-=======
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 #gameOver , #CongDiv{
   z-index: -150;
   display: none ;
@@ -334,68 +240,8 @@ img.finalBadges{
   background-color:transparent;
 }
 
-<<<<<<< HEAD
-#timer{
-  position: absolute;
-    width: 15%;
-    height:40%;
-    display: inline-block;
-    right: 30%;
-    top: 62%;
-}
-
-#timer img {
-  width:40% ;
-  height: 100%;
-  float: left;
-}
- #min{
-  width:28%;
-  height:100%;
-  display:inline-block;
-  left:32%;
-  top:0%;
-  margin-top: 0%;
-  margin-left: 1%;
-}
-
-#second{
- 
- width: 28% ;
- height: 100%;
- display: inline-block ;
- top:0%;
-}
-
-#hour{
- 
- width: 28% ;
- height: 100%;
- display: inline-block ;
- top:0%;
-}
-
-#leftColon{
-width:1%;
-height:100%;
-top:0%;
-display:inline-block;
-margin-top:0%;
-}
-
-#rightColon{
-width:1%;
-height:100%;
-display: inline-block;
-margin-top:0%;
-}
-
-
-#exitBtn, #playAgain1, #badgeBtn, #playAgain2, #backBtn
-=======
 
 #exitBtn, #playAgain1, #badgeBtn, #playAgain2
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 {
   background: no-repeat;
   background-size: contain;
@@ -403,9 +249,6 @@ margin-top:0%;
   background-position-x: center;
   background-position-y: center;
   outline: 0;
-<<<<<<< HEAD
-}
-=======
 }
 
 #currentPlayerBadges button {
@@ -418,4 +261,3 @@ margin-top:0%;
   right: 0;
   outline: 0;
 }
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421

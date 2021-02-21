@@ -4,21 +4,15 @@ let playUnderWaterSound = () => {
 };
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 let playEatingSound = () => {
     eatSound.play();
 };
 
-<<<<<<< HEAD
-=======
 let playblobSound = () => {
     blobSound.play();
 };
 
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 let playdyingSound = () => {
     dyingSound.play();
 };
@@ -40,8 +34,6 @@ let sizeSound2 = () => {
         }
           playedBefore2 = true  ; 
 
-<<<<<<< HEAD
-=======
 }
 
 let muteAll = () =>{
@@ -65,5 +57,4 @@ let unMuteAll = ()=>{
     levelUpSound.muted = false ;
     sizeUpSound.muted = false ;
     blobSound.muted = false ;
->>>>>>> 68fb52ca2389cf8e3c1868c294bf0385c2b8f421
 }
