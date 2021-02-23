@@ -25,7 +25,7 @@ Click on Logo to Play Online :
 - Collect a lot of sea stars because your lives will increase for each number of sea stars.
 - Eat the golden fish at the middle of each level to make all big fishes smaller than you.
 - Try to finish all levels as fast as possible to get our speed badges for every level.
-- Keep your lives high to get the higest number of lives score. 
+- Keep your lives counter high to get the highest score of lives. 
 
 # Tecnology Used
 * HTML5
